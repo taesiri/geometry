@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lituus Spiral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+    <hr>
+    <ul class="breadcrumb">
+        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+        <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+        <li class="active">Lituus Spiral</li>
+    </ul>
+
+    <p class="lead text-left">Lituus Spiral</p>
+
+    <div class="alert alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Warning!</h4>
+        The Website  currently under development.
+    </div>
+
+
+
+    <div class="row">
+        <div class="span10">
+            <div class="span5">
+                <p>In mathematics, a <strong>lituus</strong> is a spiral in which the angle is inversely proportional to the square of the radius (as expressed in polar coordinates).</p>
+                <p></p></br>
+                <p></p>
+            </div>
+            <div class="span4">
+                <p class="text-center"> <img src="lituus.png" class="img-rounded"> </p>
+                <p class="text-center"> <span class="label label-info" >Branch for positive $r$</span> </p>
+                <p></p>
+            </div>
+            <div class="span9">
+                <!-- Equations-->
+                <blockquote>
+                    <p class="lead ">
+                        <strong> Equations </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p> </p></br>
+                <p>
+                    \begin{align}
+                    \ r^2 \theta = k \\
+                    \end{align}
+                </p>
+                <p>
+                    This spiral, which has two branches depending on the sign of $r$ , is asymptotic to the $x$ axis. Its points of inflexion are at
+                </p>
+                <p>
+                    \begin{align}
+                    \ \bigg( \theta , r \bigg) = \bigg( \frac{1}{2}, \sqrt{2k} \bigg)  and  \bigg( \frac{1}{2}, - \sqrt{2k} \bigg) \\
+                    \end{align}
+                </p>
+                <!-- Equations-->
+                <!-- Maple-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> Maple Sample Code </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p class="text-center">
+                    <img class="text-cente" src="lituus_maple.png">
+                </p>
+                </br>
+                <pre class="prettyprint linenums">with(plots):
+Pp := polarplot(1/sqrt(t), t = 1 .. 16);
+Np := polarplot(-1/sqrt(t), t = 1 .. 16);
+display({Np, Pp});
+</pre>
+                <p>
+                    <a href="Lituus_spiral.mw"> Download Maple Code </a>
+                </p>
+                <!-- Maple-->
+
+                <!-- To Online JavaScript Graph-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> Live Graph </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+                <script type="text/javascript">
+                    var b1 = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10],axis:true});
+                    var k = b1.create('slider', [[1,8],[5,8],[0,1,4]]);
+                    var c = b1.create('curve', [function(phi){return Math.sqrt(k.Value()/phi); }, [0, 0],0, 8*Math.PI],{curveType:'polar', strokewidth:1});
+                </script>
+                <p></p>
+                <p>JavaScript code</p>
+            <pre class="prettyprint linenums">// jsxgraph.js Required
+var b1 = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10],axis:true});
+var k = b1.create('slider', [[1,8],[5,8],[0,1,4]]);
+var c = b1.create('curve', [function(phi){return Math.sqrt(k.Value()/phi); }, [0, 0],0, 8*Math.PI],{curveType:'polar', strokewidth:1});</pre>
+                <!-- To Online JavaScript Graph-->
+
+                <!-- To Developers-->
+                <br/>
+                <blockquote>
+                    <p class="lead muted">
+                        <strong> To Developers </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <pre class="prettyprint linenums"> //Source code is not available</pre>
+                <!-- To Developers-->
+                <!-- Refrences-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> References </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <ol>
+                    <li> <a href="http://en.wikipedia.org/wiki/Lituus_(mathematics)"> Wikipedia, Lituus (mathematics) </a> </li>
+                    <li> <a href="http://paulbourke.net/geometry/archimedesspiral/"> Paulbourke, Lituus spiral </a> </li>
+                    <li> <a href="mailto:milad261@gmail.com"> Maple Code Author : Milad Ghanimat</a> </li>
+                    <li> <a href="http://jsxgraph.uni-bayreuth.de/wiki/index.php/Lituus"> JSXGraph, Lituus  </a> </li>
+                </ol>
+                <!-- Refrences-->
+                </br>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="footer">
+        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
+        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </div>
+</div> <!-- /container -->
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>

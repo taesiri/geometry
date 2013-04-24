@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Viviani's curve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+    <hr>
+    <ul class="breadcrumb">
+        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+        <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+        <li class="active">Viviani's curve</li>
+    </ul>
+
+    <p class="lead text-left">Viviani's curve</p>
+
+    <div class="alert alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Warning!</h4>
+       The Website  currently under development.
+    </div>
+
+
+
+    <div class="row">
+        <div class="span10">
+            <div class="span5">
+                <p>In <strong>mathematics</strong>, particularly geometry, Viviani's curve, also known as Viviani's window, is a figure eight shaped space curve named after the Italian mathematician Vincenzo Viviani, the intersection of a sphere with a cylinder that is tangent to the sphere and passes through the center of the sphere. </p>
+                <p></p>
+            </div>
+            <div class="span4">
+                <p class="text-center"> <img src="viviani.gif" class="img-rounded"> </p>
+                <p class="text-center"> <span class="label label-info" >Sphere-cylinder intersection</span></p>
+                <p></p>
+            </div>
+            <div class="span9">
+                <!-- Equations-->
+                <blockquote>
+                    <p class="lead ">
+                         <strong> Equations </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p> The curve can be obtained by intersecting a sphere of radius $2a$  centered at the origin, </p>
+                <p>
+                    \begin{align}
+                    \ x^2 + y^2 + z^2 = 4a^2 \\
+                    \end{align}
+                </p>
+                <p>with the cylinder centered at $(a,0,0)$ of radius $a$ given by </p>
+                <p>
+                    \begin{align}
+                    \ (x-a)^2 + y^2 = a^2\\
+                    \end{align}
+                </p>
+                <p>The resulting curve of intersection,$V$, can be parameterized by $t$ to give the parametric equation of Viviani's curve: </p>
+                <p>
+                    \begin{align}
+                    \ V(t) = \Bigg< a \big(1+\cos(t)\big), a\sin(t), 2a\sin(\frac{t}{2})\Bigg>
+                    \end{align}
+                </p>
+                <!-- Equations-->
+                <!-- Maple-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> Maple Sample Code </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p class="text-center">
+                    <img class="text-cente" src="viviani_maple.gif">
+                </p>
+                </br>
+                <pre class="prettyprint linenums">restart;
+with(plots):
+display([spacecurve([1+cos(t),sin(t),sqrt(4-sin(t)^2-(1+cos(t))^2)],t=0..2*Pi,color=red,thickness=4),spacecurve([1+cos(t),sin(t),-sqrt(4-sin(t)^2-(1+cos(t))^2)],t=0..2*Pi,color=red,thickness=4),sphereplot(2,theta=0..2*Pi,phi=0..Pi,grid=[36,48],color=green,style=wireframe),plot3d([1+cos(t),sin(t),s],t=0..2*Pi,s=-2..2,grid=[36,48],color=cyan,style=wireframe),spacecurve([1+cos(t),sin(t),2.01],t=0..2*Pi,color=blue,thickness=1),spacecurve([1+cos(t),sin(t),-2.03],t=0..2*Pi,color=blue,thickness=1)],scaling=constrained,orientation=[-95,60],title=`Viviani's curve`,titlefont=[TIMES,BOLD,24]); </pre>
+                <p>
+                    <a href="Viviani.mw"> Download Maple Code </a>
+                </p>
+                <!-- Maple-->
+                <!-- To Developers-->
+                <br/>
+                <blockquote>
+                    <p class="lead muted">
+                        <strong> To Developers </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <pre class="prettyprint linenums"> //Source code is not available</pre>
+                <!-- To Developers-->
+                <!-- Refrences-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> References </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <ol>
+                    <li> <a href="http://en.wikipedia.org/wiki/Viviani's_curve"> Wikipedia, Viviani's curve </a> </li>
+                    <li> <a href="http://math.la.asu.edu/~kawski/MAPLE/272/c_curves/viviani1.html"> Math.la.asu.edu, Viviani's curve </a> </li>
+                    <li> <a href="http://paulbourke.net/geometry/viviani/"> Paulbourke, Viviani's curve </a> </li>
+                </ol>
+                <!-- Refrences-->
+                </br>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="footer">
+        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
+        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </div>
+</div> <!-- /container -->
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>

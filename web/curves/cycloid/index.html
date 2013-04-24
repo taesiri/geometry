@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cycloid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+    <hr>
+    <ul class="breadcrumb">
+        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+        <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+        <li class="active">Cycloid</li>
+    </ul>
+
+    <p class="lead text-left">Cycloid</p>
+
+    <div class="alert alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Warning!</h4>
+       The Website  currently under development.
+    </div>
+
+
+
+    <div class="row">
+        <div class="span10">
+            <div class="span5">
+                <p> A <strong>cycloid</strong> is the curve traced by a point on the rim of a circular wheel as the wheel rolls along a straight line. It is an example of a roulette, a curve generated by a curve rolling on another curve. </p>
+                <p> The cycloid is the solution to the brachistochrone problem (i.e., it is the curve of fastest descent under gravity) and the related tautochrone problem (i.e., the period of an object in descent without friction inside this curve does not depend on the object's starting position).</p>
+                <p></p>
+            </div>
+            <div class="span4">
+                <p class="text-center"> <img src="Cycloid_f.gif" class="img-rounded"> </p>
+                <p class="text-center"> <span class="label label-info" >A cycloid generated by a rolling circle</span> </p>
+                <p></p>
+            </div>
+            <div class="span9">
+                <!-- Equations-->
+                <blockquote>
+                    <p class="lead ">
+                         <strong> Equations </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p> The cycloid through the origin, generated by a circle of radius $r$ , consists of the points $(x, y)$, with </p></br>
+                <p>
+                    \begin{align}
+                    \ x = r (t - \sin(t)) \\
+                    \ y = r (1 - \cos(t)) \\
+                    \end{align}
+                </p>
+                <!-- Equations-->
+                </br>
+                <blockquote>
+                    <p class="lead ">
+                        <strong> Area </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p>One arch of a cycloid generated by a circle of radius $r$ can be parameterized by</p>
+                <p>
+                    \begin{align}
+                    \ x = r (t - \sin(t)) \\
+                    \ y = r (1 - \cos(t)) \\
+                    \end{align}
+                </p>
+                <p>with</p>
+                <p>
+                    \begin{align}
+                    \ 0 \leq t \leq 2\pi \\
+                    \end{align}
+                </p>
+                <p>since</p>
+                <p>
+                    \begin{align}
+                    \ \frac{\mathrm{d}x}{\mathrm{d}t} = r(1-cos(t)) \\
+                    \end{align}
+                </p>
+                <p>the area under the arch is</p>
+                <p>
+                    \begin{align}
+                    \ A = \int_{t=0}^{t=2\pi} y\mathrm{d}x \\
+                    \end{align}
+                    \begin{align}
+                    \ A = \int_{t=0}^{t=2\pi} r^2(1-\cos(t))^2\mathrm{d}t \\
+                    \end{align}
+                    \begin{align}
+                    \ A =  \Bigg[ r^2 \Bigg( \frac{3}{2}  t-2  \sin(t) + \frac{1}{2} \cos(t) \sin(t) \Bigg) \Bigg]_{t=0}^{t=2\pi}  \\
+                    \end{align}
+                    \begin{align}
+                    \ A =  3\pi r^2  \\
+                    \end{align}
+                </p>
+                <!-- Area-->
+                <!-- Arc length-->
+                </br>
+                <blockquote>
+                    <p class="lead ">
+                        <strong> Arc length </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p>The arc length $S$ of one arch is given by</p>
+                <p>
+                    \begin{align}
+                    \  S = \int_{t=0}^{t=2\pi} \Bigg[  \sqrt{\Bigg( \frac{ \mathrm{d}y}{ \mathrm{d}t} \Bigg)^2  + \Bigg( \frac{ \mathrm{d}x}{ \mathrm{d}t} \Bigg)^2} \Bigg] \mathrm{d}t \\
+                    \end{align}
+
+                    \begin{align}
+                    \  S = \int_{t=0}^{t=2\pi} r\sqrt{2-2\cos(t)} \mathrm{d}t \\
+                    \end{align}
+
+                    \begin{align}
+                    \  S = \int_{t=0}^{t=2\pi} 2r\sin(\frac{t}{2}) \mathrm{d}t \\
+                    \end{align}
+
+                    \begin{align}
+                    \  S = 8r \\
+                    \end{align}
+                </p>
+                <!-- Arc length-->
+                <!-- Maple-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> Maple Sample Code </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <p class="text-center">
+                    <img class="text-cente" src="graph.gif">
+                </p>
+                </br>
+                <pre class="prettyprint linenums"> with(plots):
+ animate({[s+cos(t), 1+sin(t), t=0..2*Pi],[t-sin(t), 1-cos(t),t=0..4*Pi],[s-t*sin(s), 1-t*cos(s), t=0..1]},s=0..4*Pi,frames=50,color=blue); </pre>
+                <p>
+                    <a href="MathApps-Cycloid.mw"> Download Document </a>
+
+                </p>
+                <p>
+                    <a href="MathApps-Cycloid.mw"> Download Maple Code </a>
+                </p>
+                <!-- Maple-->
+
+                <!-- Matlab-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> Matlab Sample Code </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <pre class="prettyprint linenums"> %cycloid
+len=0.75; %length of line connected to centre of rolling circle
+r=0.5;    %radius of rolling circle
+          %if len=r then it becomes cycloid
+n=0;
+roughx=[];
+roughy=[];
+dtheta=pi/20;
+t=linspace(0,2*pi,50);
+
+[x,y]=pol2cart(t,r);
+h1=patch(x,y,'r');%draw the circle
+
+xl=[-len 0];yl=[0 0];%coordinates of line
+h2=line(0,0);%draw line connected to centre of rolling circle
+
+axis equal
+axis([0 5*pi -1 1.5+(r+len)]);
+set(gca,'position',[0.01 0.01 0.98 0.98])
+set(gcf,'position',[10 40 1200 500])
+
+line([-2 17],[0 0])%base line
+
+upto=2*5*pi+dtheta;
+while n<span class="tag">&lt;p</span>upto && ishandle(h2)
+     set(h1,'xdata',x+n*r,'ydata',y-min(y));%move circle forward by
+
+     [x3,y3]=transform2d(xl,yl,n*r,r,-n,0,0);%rotate and translate line
+     set(h2,'xdata',x3,'ydata',y3);
+     line([roughx x3(1)],[roughy y3(1)])
+     roughx=x3(1);
+     roughy=y3(1);
+     pause(0.025)
+     n=n+dtheta;
+end              </pre>
+                <p>
+                    <a href="cycloid.m"> Download Matlab Code </a>
+                </p>
+                <!-- Matlab-->
+
+                <!-- To Developers-->
+                <br/>
+                <blockquote>
+                    <p class="lead muted">
+                        <strong> To Developers </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <pre class="prettyprint linenums"> //Source code is not available</pre>
+                <!-- To Developers-->
+                <!-- Refrences-->
+                <br/>
+                <blockquote>
+                    <p class="lead">
+                        <strong> References </strong>
+                    </p>
+                </blockquote>
+                <hr>
+                <ol>
+                    <li> <a href="http://en.wikipedia.org/wiki/Cycloid"> Wikipedia, Cycloid </a> </li>
+                    <li> <a href="http://paulbourke.net/geometry/cycloid/"> Paulbourke, Cycloid Curve </a> </li>
+                    <li> <a href="http://www.maplesoft.com/support/help/Maple/view.aspx?path=MathApps/Cycloid"> MapleSoft Online Help, Cycloid </a> </li>
+                    <li> <a href="http://archives.math.utk.edu/visual.calculus/0/parametric.5/"> Math.utk.edu, The Cycloid </a> </li>
+                    <li> <a href="http://www.mathworks.com/matlabcentral/fileexchange/24058-animations/content/cycloid.m"> Mathworks, Cycloid </a> </li>
+                </ol>
+                <!-- Refrences-->
+                </br>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="footer">
+        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
+        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </div>
+</div> <!-- /container -->
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>
