@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Differential Geometry &middot; AUT</title>
+    <title>Questions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Geometry Group Website">
     <meta name="author" content="taesiri">
@@ -14,7 +14,7 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
+    <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -23,40 +23,35 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../ico/favicon.png">
+
 </head>
-
 <body>
-
-<div class="container">
+<div id="wrap">
     <div class="navbar-wrapper">
-        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
             <div class="navbar navbar-inverse">
                 <div class="navbar-inner">
-                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="brand" href="../index.html">AUT Geometry Group</a>
-                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <a class="brand" href="index.html">AUT Geometry Group</a>
                     <div class="nav-collapse in collapse" style="height: auto;">
                         <ul class="nav">
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="../events.html">Events</a></li>
                             <li><a href="../publications.html">Publications</a></li>
-                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="active" ><a href="../questions/">Questions</a></li>
-                                    <li ><a href="../books/">Books</a></li>
-                                    <li ><a href="../video/">Videos</a></li>
+                                    <li class="active"><a href="../questions/">Questions</a></li>
+                                    <li><a href="../books/">Books</a></li>
+                                    <li><a href="../video/">Videos</a></li>
                                     <li class="divider"></li>
                                     <li class="nav-header">Geometric Shapes</li>
                                     <li><a href="../surfaces/surfaces.html">Surfaces</a></li>
-                                    <li ><a href="../curves/curves.html">Curves</a></li>
+                                    <li><a href="../curves/curves.html">Curves</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -73,17 +68,41 @@
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
     </div>
-    <hr>
 
-    <p></br></p>
-    <p class="text-center text-info"> NO CONTENT AVAILABLE</p>
-
-    <hr>
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <p></br></p>
+        <p class="text-center text-info"> NO CONTENT AVAILABLE</p>
     </div>
-</div> <!-- /container -->
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
 
 
 <!-- Le javascript

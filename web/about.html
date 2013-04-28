@@ -11,7 +11,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -24,31 +23,25 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="ico/favicon.png">
+
 </head>
-
 <body>
-
-<div class="container">
-
+<div id="wrap">
     <div class="navbar-wrapper">
-        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
             <div class="navbar navbar-inverse">
                 <div class="navbar-inner">
-                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="brand" href="index.html">AUT Geometry Group</a>
-                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                     <div class="nav-collapse in collapse" style="height: auto;">
                         <ul class="nav">
-                            <li ><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="publications.html">Publications</a></li>
-                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -76,36 +69,54 @@
         </div> <!-- /.container -->
     </div>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
         <p class="lead text-left">About</p>
-    </div>
+        <p>PLACE HOLDER</P>
+        <hr>
+        <hr>
 
-    <hr>
-
-    <p class="lead text-left">About</p>
-         <p>PLACE HOLDER</P>
-    <hr>
-    <hr>
-
-    <p class="lead text-left">Open Source Libraries behind this website</p>
-    <ol>
-        <li style="height: 32px;"> <a class="label label-success" href="http://twitter.github.io/bootstrap/"> Twitter Bootstrap </a>  CSS toolkit</li>
+        <p class="lead text-left">Open Source Libraries behind this website</p>
+        <ol>
+            <li style="height: 32px;"> <a class="label label-success" href="http://twitter.github.io/bootstrap/"> Twitter Bootstrap </a>  CSS toolkit</li>
             <ul > Twitter Bootstrap is distributed under <a  class="label label-info" target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a> </ul></br>
-        <li style="height: 32px;"> <a class="label label-success" href="http://www.mathjax.org/"> MathJax </a> is display engine for mathematics formulas </li>
+            <li style="height: 32px;"> <a class="label label-success" href="http://www.mathjax.org/"> MathJax </a> is display engine for mathematics formulas </li>
             <ul> MathJax is distributed under the <a  class="label label-info" target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a> </ul></br>
-        <li style="height: 32px;"> <a class="label label-success" href="http://jsxgraph.uni-bayreuth.de/"> JSXgraph </a> for interactive geometry, function plotting, charting, and data visualization </li>
+            <li style="height: 32px;"> <a class="label label-success" href="http://jsxgraph.uni-bayreuth.de/"> JSXgraph </a> for interactive geometry, function plotting, charting, and data visualization </li>
             <ul> JSXGraph is released under the <a  class="label label-info" target="_blank" href="http://www.gnu.org/copyleft/lesser.html">LGPL – Lesser GNU General Public License</a></ul></br>
-        <li style="height: 32px;"> <a class="label label-success" href="http://flowplayer.org"> FlowPlayer.js </a> is a Media Player for the web  </li>
+            <li style="height: 32px;"> <a class="label label-success" href="http://flowplayer.org"> FlowPlayer.js </a> is a Media Player for the web  </li>
             <ul> FlowPlayer is released under the <a  class="label label-info" target="_blank" href="http://flowplayer.org/license/"> GPL License v3 </a></ul></br>
-    </ol>
-    <hr>
-    <hr>
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        </ol>
     </div>
-</div> <!-- /container -->
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
 
 
 <!-- Le javascript

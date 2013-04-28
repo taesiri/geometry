@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Differential Geometry &middot; AUT</title>
+    <title>Curves</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Geometry Group Website">
     <meta name="author" content="taesiri">
@@ -26,8 +26,7 @@
 </head>
 
 <body>
-
-<div class="container">
+<div id="wrap">
     <div class="navbar-wrapper">
         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
@@ -73,85 +72,111 @@
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
     </div>
-    <hr>
 
-    <p class="lead text-left">Curves</p>
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
 
-    <div class="container-fluid">
-    <div class="row-fluid">
-    <div class="span3">
-        <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-                <li class="nav-header">Curves</li>
-                <li><a href="cycloid/">Cycloid</a></li>
-                <li><a href="viviani/">Viviani's curve</a></li>
-                <li><a href="euler_spiral/">Cornu Spiral</a></li>
-                <li><a href="butterfly_curve/">Butterfly curve</a></li>
-                <li><a href="conic_sections/">Conic sections</a></li>
-                <li class="nav-header">Spirals</li>
-                <li><a href="fermats_spiral/">Fermat's Spiral</a></li>
-                <li><a href="lituus_spiral/">Lituus Spiral</a></li>
-                <li><a href="archimedes_spiral/">Archimedes Spiral</a></li>
-            </ul>
-        </div><!--/.well -->
-    </div><!--/span-->
-    <div class="span8">
-    <div class="row-fluid">
-        <div class="span4">
-            <h4>Cycloid</h4>
-            <img src="cycloid/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="cycloid/">View details &raquo;</a></p>
-        </div><!--/span-->
-        <div class="span4">
-            <h4>Viviani's curve</h4>
-            <img src="viviani/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="viviani/">View details &raquo;</a></p>
-        </div><!--/span-->
-        <div class="span4">
-            <h4>Cornu Spiral</h4>
-            <img src="euler_spiral/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="euler_spiral/">View details &raquo;</a></p>
-        </div><!--/span-->
-    </div><!--/row-->
-    <div class="row-fluid">
-        <div class="span4">
-            <h4>Butterfly curve</h4>
-            <img src="butterfly_curve/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="butterfly_curve/">View details &raquo;</a></p>
-        </div><!--/span-->
-        <div class="span4">
-            <h4>Fermat's Spiral</h4>
-            <img src="fermats_spiral/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="fermats_spiral/">View details &raquo;</a></p>
-        </div><!--/span-->
-        <div class="span4">
-            <h4>Conic Sections</h4>
-            <img src="conic_sections/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="conic_sections/">View details &raquo;</a></p>
-        </div><!--/span-->
-    </div><!--/row-->
-    <div class="row-fluid">
-        <div class="span4">
-            <h4>Lituus Spiral</h4>
-            <img src="lituus_spiral/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="lituus_spiral/">View details &raquo;</a></p>
-        </div><!--/span-->
-        <div class="span4">
-            <h4>Archimedean Spiral</h4>
-            <img src="archimedes_spiral/small.gif" class="img-rounded"><p></p>
-            <p><a class="btn btn-inverse" href="archimedes_spiral/">View details &raquo;</a></p>
-        </div><!--/span-->
-    </div><!--/row-->
-    </div><!--/span-->
-    </div><!--/row-->
-    </div><!--/.fluid-container-->
-    <hr>
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p class="lead text-left">Curves</p>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <div class="well sidebar-nav">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">Curves</li>
+                            <li><a href="cycloid/">Cycloid</a></li>
+                            <li><a href="viviani/">Viviani's curve</a></li>
+                            <li><a href="euler_spiral/">Cornu Spiral</a></li>
+                            <li><a href="butterfly_curve/">Butterfly curve</a></li>
+                            <li><a href="conic_sections/">Conic sections</a></li>
+                            <li class="nav-header">Spirals</li>
+                            <li><a href="fermats_spiral/">Fermat's Spiral</a></li>
+                            <li><a href="lituus_spiral/">Lituus Spiral</a></li>
+                            <li><a href="archimedes_spiral/">Archimedes Spiral</a></li>
+                        </ul>
+                    </div><!--/.well -->
+                </div><!--/span-->
+                <div class="span8">
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <h4>Cycloid</h4>
+                            <img src="cycloid/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="cycloid/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                        <div class="span4">
+                            <h4>Viviani's curve</h4>
+                            <img src="viviani/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="viviani/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                        <div class="span4">
+                            <h4>Cornu Spiral</h4>
+                            <img src="euler_spiral/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="euler_spiral/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                    </div><!--/row-->
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <h4>Butterfly curve</h4>
+                            <img src="butterfly_curve/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="butterfly_curve/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                        <div class="span4">
+                            <h4>Fermat's Spiral</h4>
+                            <img src="fermats_spiral/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="fermats_spiral/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                        <div class="span4">
+                            <h4>Conic Sections</h4>
+                            <img src="conic_sections/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="conic_sections/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                    </div><!--/row-->
+                    <div class="row-fluid">
+                        <div class="span4">
+                            <h4>Lituus Spiral</h4>
+                            <img src="lituus_spiral/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="lituus_spiral/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                        <div class="span4">
+                            <h4>Archimedean Spiral</h4>
+                            <img src="archimedes_spiral/small.gif" class="img-rounded"><p></p>
+                            <p><a class="btn btn-inverse" href="archimedes_spiral/">View details &raquo;</a></p>
+                        </div><!--/span-->
+                    </div><!--/row-->
+                </div><!--/span-->
+            </div><!--/row-->
+        </div><!--/.fluid-container-->
+
     </div>
-</div> <!-- /container -->
 
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
 
 <!-- Le javascript
 ================================================== -->
