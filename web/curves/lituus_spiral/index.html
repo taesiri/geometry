@@ -47,11 +47,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
 
 </head>
-
 <body>
-
-<div class="container">
-
+<div id="wrap">
     <div class="navbar-wrapper">
         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
@@ -97,139 +94,163 @@
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
     </div>
-    <hr>
-    <ul class="breadcrumb">
-        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
-        <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
-        <li class="active">Lituus Spiral</li>
-    </ul>
 
-    <p class="lead text-left">Lituus Spiral</p>
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+            <li class="active">Lituus Spiral</li>
+        </ul>
 
-    <div class="alert alert-block">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <h4>Warning!</h4>
-        Website is currently under development.
-    </div>
+        <p class="lead text-left">Lituus Spiral</p>
 
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
 
-
-    <div class="row">
-        <div class="span10">
-            <div class="span5">
-                <p>In mathematics, a <strong>lituus</strong> is a spiral in which the angle is inversely proportional to the square of the radius (as expressed in polar coordinates).</p>
-                <p></p></br>
-                <p></p>
-            </div>
-            <div class="span4">
-                <p class="text-center"> <img src="lituus.png" class="img-rounded"> </p>
-                <p class="text-center"> <span class="label label-info" >Branch for positive $r$</span> </p>
-                <p></p>
-            </div>
-            <div class="span9">
-                <!-- Equations-->
-                <blockquote>
-                    <p class="lead ">
-                        <strong> Equations </strong>
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                    <p>In mathematics, a <strong>lituus</strong> is a spiral in which the angle is inversely proportional to the square of the radius (as expressed in polar coordinates).</p>
+                    <p></p></br>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="lituus.png" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >Branch for positive $r$</span> </p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equations-->
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equations </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p> </p></br>
+                    <p>
+                        \begin{align}
+                        \ r^2 \theta = k \\
+                        \end{align}
                     </p>
-                </blockquote>
-                <hr>
-                <p> </p></br>
-                <p>
-                    \begin{align}
-                    \ r^2 \theta = k \\
-                    \end{align}
-                </p>
-                <p>
-                    This spiral, which has two branches depending on the sign of $r$ , is asymptotic to the $x$ axis. Its points of inflexion are at
-                </p>
-                <p>
-                    \begin{align}
-                    \ \bigg( \theta , r \bigg) = \bigg( \frac{1}{2}, \sqrt{2k} \bigg)  and  \bigg( \frac{1}{2}, - \sqrt{2k} \bigg) \\
-                    \end{align}
-                </p>
-                <!-- Equations-->
-                <!-- Maple-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> Maple Sample Code </strong>
+                    <p>
+                        This spiral, which has two branches depending on the sign of $r$ , is asymptotic to the $x$ axis. Its points of inflexion are at
                     </p>
-                </blockquote>
-                <hr>
-                <p class="text-center">
-                    <img class="text-cente" src="lituus_maple.png">
-                </p>
-                </br>
+                    <p>
+                        \begin{align}
+                        \ \bigg( \theta , r \bigg) = \bigg( \frac{1}{2}, \sqrt{2k} \bigg)  and  \bigg( \frac{1}{2}, - \sqrt{2k} \bigg) \\
+                        \end{align}
+                    </p>
+                    <!-- Equations-->
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p class="text-center">
+                        <img class="text-cente" src="lituus_maple.png">
+                    </p>
+                    </br>
                 <pre class="prettyprint linenums">with(plots):
 Pp := polarplot(1/sqrt(t), t = 1 .. 16);
 Np := polarplot(-1/sqrt(t), t = 1 .. 16);
 display({Np, Pp});
 </pre>
-                <p>
-                    <a href="Lituus_spiral.mw"> Download Maple Code </a>
-                </p>
-                <!-- Maple-->
-
-                <!-- To Online JavaScript Graph-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> Live Graph </strong>
+                    <p>
+                        <a href="Lituus_spiral.mw"> Download Maple Code </a>
                     </p>
-                </blockquote>
-                <hr>
-                <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-                <script type="text/javascript">
-                    var b1 = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10],axis:true});
-                    var k = b1.create('slider', [[1,8],[5,8],[0,1,4]]);
-                    var c = b1.create('curve', [function(phi){return Math.sqrt(k.Value()/phi); }, [0, 0],0, 8*Math.PI],{curveType:'polar', strokewidth:1});
-                </script>
-                <p></p>
-                <p>JavaScript code</p>
+                    <!-- Maple-->
+
+                    <!-- To Online JavaScript Graph-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Live Graph </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+                    <script type="text/javascript">
+                        var b1 = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10],axis:true});
+                        var k = b1.create('slider', [[1,8],[5,8],[0,1,4]]);
+                        var c = b1.create('curve', [function(phi){return Math.sqrt(k.Value()/phi); }, [0, 0],0, 8*Math.PI],{curveType:'polar', strokewidth:1});
+                    </script>
+                    <p></p>
+                    <p>JavaScript code</p>
             <pre class="prettyprint linenums">// jsxgraph.js Required
 var b1 = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10],axis:true});
 var k = b1.create('slider', [[1,8],[5,8],[0,1,4]]);
 var c = b1.create('curve', [function(phi){return Math.sqrt(k.Value()/phi); }, [0, 0],0, 8*Math.PI],{curveType:'polar', strokewidth:1});</pre>
-                <!-- To Online JavaScript Graph-->
+                    <!-- To Online JavaScript Graph-->
 
-                <!-- To Developers-->
-                <br/>
-                <blockquote>
-                    <p class="lead muted">
-                        <strong> To Developers </strong>
-                    </p>
-                </blockquote>
-                <hr>
-                <pre class="prettyprint linenums"> //Source code is not available</pre>
-                <!-- To Developers-->
-                <!-- Refrences-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> References </strong>
-                    </p>
-                </blockquote>
-                <hr>
-                <ol>
-                    <li> <a href="http://en.wikipedia.org/wiki/Lituus_(mathematics)"> Wikipedia, Lituus (mathematics) </a> </li>
-                    <li> <a href="http://paulbourke.net/geometry/archimedesspiral/"> Paulbourke, Lituus spiral </a> </li>
-                    <li> <a href="mailto:milad261@gmail.com"> Maple Code Author : Milad Ghanimat</a> </li>
-                    <li> <a href="http://jsxgraph.uni-bayreuth.de/wiki/index.php/Lituus"> JSXGraph, Lituus  </a> </li>
-                </ol>
-                <!-- Refrences-->
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Lituus_(mathematics)"> Wikipedia, Lituus (mathematics) </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/archimedesspiral/"> Paulbourke, Lituus spiral </a> </li>
+                        <li> <a href="mailto:milad261@gmail.com"> Maple Code Author : Milad Ghanimat</a> </li>
+                        <li> <a href="http://jsxgraph.uni-bayreuth.de/wiki/index.php/Lituus"> JSXGraph, Lituus  </a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
                 </br>
             </div>
         </div>
-    </div>
-    <hr>
 
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     </div>
-</div> <!-- /container -->
-
+</footer>
 
 <!-- Le javascript
 ================================================== -->

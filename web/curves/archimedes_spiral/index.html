@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Archimedean spiral</title>
+    <title>Archimedean Spiral</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Geometry Group Website">
     <meta name="author" content="taesiri">
@@ -42,12 +42,13 @@
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
 </head>
-
 <body>
-
-<div class="container">
-
+<div id="wrap">
     <div class="navbar-wrapper">
         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
@@ -93,80 +94,81 @@
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
     </div>
-    <hr>
-    <ul class="breadcrumb">
-        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
-        <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
-        <li class="active">Archimedean spiral</li>
-    </ul>
 
-    <p class="lead text-left">Archimedean spiral</p>
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+            <li class="active">Archimedean Spiral</li>
+        </ul>
 
-    <div class="alert alert-block">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <h4>Warning!</h4>
-       Website is currently under development.
-    </div>
+        <p class="lead text-left">Archimedean Spiral</p>
 
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
 
-
-    <div class="row">
-        <div class="span10">
-            <div class="span5">
-               <p>The <strong>Archimedean spiral</strong> (also known as the  <strong>arithmetic spiral</strong> or  <strong>spiral of Archimedes</strong>) is a spiral named after the 3rd century BC Greek mathematician Archimedes. It is the locus of points corresponding to the locations over time of a point moving away from a fixed point with a constant speed along a line which rotates with constant angular velocity. Equivalently, in polar coordinates $(r, \theta)$ it can be described by the equation</p>
-               <p></p></br>
-               <p></p>
-            </div>
-            <div class="span4">
-                <p class="text-center"> <img src="archimedean.png" class="img-rounded"> </p>
-                <p class="text-center"> <span class="label label-info" >Three 360° turnings of one arm of an Archimedean spiral</span> </p>
-                <p></p>
-            </div>
-            <div class="span9">
-                <!-- Equations-->
-                <blockquote>
-                    <p class="lead ">
-                         <strong> Equations </strong>
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                    <p>The <strong>Archimedean spiral</strong> (also known as the  <strong>arithmetic spiral</strong> or  <strong>spiral of Archimedes</strong>) is a spiral named after the 3rd century BC Greek mathematician Archimedes. It is the locus of points corresponding to the locations over time of a point moving away from a fixed point with a constant speed along a line which rotates with constant angular velocity. Equivalently, in polar coordinates $(r, \theta)$ it can be described by the equation</p>
+                    <p></p></br>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="archimedean.png" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >Three 360° turnings of one arm of an Archimedean spiral</span> </p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equations-->
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equations </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p> </p></br>
+                    <p>
+                        \begin{align}
+                        \ r = a + b\theta
+                        \end{align}
                     </p>
-                </blockquote>
-                <hr>
-                <p> </p></br>
-                <p>
-                    \begin{align}
-                    \ r = a + b\theta
-                    \end{align}
-                </p>
-                <!-- Equations-->
-                <!-- General Archimedean spiral-->
-                </br>
-                <blockquote>
-                    <p class="lead ">
-                        <strong> General Archimedean spiral </strong>
+                    <!-- Equations-->
+                    <!-- General Archimedean spiral-->
+                    </br>
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> General Archimedean spiral </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p>Sometimes the term Archimedean spiral is used for the more general group of spirals</p>
+                    <p>
+                        \begin{align}
+                        \ r = a + b\theta^\frac{1}{x} \\
+                        \end{align}
                     </p>
-                </blockquote>
-                <hr>
-                <p>Sometimes the term Archimedean spiral is used for the more general group of spirals</p>
-                <p>
-                    \begin{align}
-                    \ r = a + b\theta^\frac{1}{x} \\
-                    \end{align}
-                </p>
-                <p>
-                    The normal Archimedean spiral occurs when x = 1. Other spirals falling into this group include the hyperbolic spiral, Fermat's spiral, and the lituus. Virtually all static spirals appearing in nature are logarithmic spirals, not Archimedean ones. Many dynamic spirals (such as the Parker spiral of the solar wind, or the pattern made by a Catherine's wheel) are Archimedean.
-                </p>
-               <!-- General Archimedean spiral-->
-                <!-- Maple-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> Maple Sample Code </strong>
+                    <p>
+                        The normal Archimedean spiral occurs when x = 1. Other spirals falling into this group include the hyperbolic spiral, Fermat's spiral, and the lituus. Virtually all static spirals appearing in nature are logarithmic spirals, not Archimedean ones. Many dynamic spirals (such as the Parker spiral of the solar wind, or the pattern made by a Catherine's wheel) are Archimedean.
                     </p>
-                </blockquote>
-                <hr>
-                <p class="text-center">
-                    <img class="text-cente" src="mapleArchimedeanSpiral.png">
-                </p>
-                </br>
+                    <!-- General Archimedean spiral-->
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p class="text-center">
+                        <img class="text-cente" src="mapleArchimedeanSpiral.png">
+                    </p>
+                    </br>
                 <pre class="prettyprint linenums">restart;
 with(plots):           # we will use drawing cabability
 with(LinearAlgebra):   # we will use linear algebra capability
@@ -197,46 +199,69 @@ AS := plot(
 'as(t)' = as(t);  # see details AS parameterization
 display(C,AS);    # render two drawings
   </pre>
-                <p>
-                    <a href="Archimedean.mw"> Download Maple Code </a>
-                </p>
-                <!-- Maple-->
-                <!-- To Developers-->
-                <br/>
-                <blockquote>
-                    <p class="lead muted">
-                        <strong> To Developers </strong>
+                    <p>
+                        <a href="Archimedean.mw"> Download Maple Code </a>
                     </p>
-                </blockquote>
-                <hr>
-                <pre class="prettyprint linenums"> //Source code is not available</pre>
-                <!-- To Developers-->
-                <!-- Refrences-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> References </strong>
-                    </p>
-                </blockquote>
-                <hr>
-                <ol>
-                    <li> <a href="http://en.wikipedia.org/wiki/Archimedean_spiral"> Wikipedia, Archimedean spiral </a> </li>
-                    <li> <a href="http://paulbourke.net/geometry/archimedesspiral/"> Paulbourke, Archimedes spiral </a> </li>
-                    <li> <a href="http://mathsci.ucd.ie/modules/mst30070/maple/L17/arcim_sprl.html"> UNIVERSITY COLLEGE DUBLIN (UCD), Archimedean Spiral  </a> </li>
-                </ol>
-                <!-- Refrences-->
+                    <!-- Maple-->
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Archimedean_spiral"> Wikipedia, Archimedean spiral </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/archimedesspiral/"> Paulbourke, Archimedes spiral </a> </li>
+                        <li> <a href="http://mathsci.ucd.ie/modules/mst30070/maple/L17/arcim_sprl.html"> UNIVERSITY COLLEGE DUBLIN (UCD), Archimedean Spiral  </a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
                 </br>
             </div>
         </div>
-    </div>
-    <hr>
 
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     </div>
-</div> <!-- /container -->
-
+</footer>
 
 <!-- Le javascript
 ================================================== -->

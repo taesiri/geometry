@@ -42,12 +42,13 @@
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
 </head>
-
 <body>
-
-<div class="container">
-
+<div id="wrap">
     <div class="navbar-wrapper">
         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
@@ -93,116 +94,140 @@
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
     </div>
-    <hr>
-    <ul class="breadcrumb">
-        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
-        <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
-        <li class="active">Viviani's curve</li>
-    </ul>
 
-    <p class="lead text-left">Viviani's curve</p>
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+            <li class="active">Viviani's curve</li>
+        </ul>
 
-    <div class="alert alert-block">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <h4>Warning!</h4>
-       Website is currently under development.
-    </div>
+        <p class="lead text-left">Viviani's curve</p>
 
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
 
-
-    <div class="row">
-        <div class="span10">
-            <div class="span5">
-                <p>In <strong>mathematics</strong>, particularly geometry, Viviani's curve, also known as Viviani's window, is a figure eight shaped space curve named after the Italian mathematician Vincenzo Viviani, the intersection of a sphere with a cylinder that is tangent to the sphere and passes through the center of the sphere. </p>
-                <p></p>
-            </div>
-            <div class="span4">
-                <p class="text-center"> <img src="viviani.gif" class="img-rounded"> </p>
-                <p class="text-center"> <span class="label label-info" >Sphere-cylinder intersection</span></p>
-                <p></p>
-            </div>
-            <div class="span9">
-                <!-- Equations-->
-                <blockquote>
-                    <p class="lead ">
-                         <strong> Equations </strong>
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                    <p>In <strong>mathematics</strong>, particularly geometry, Viviani's curve, also known as Viviani's window, is a figure eight shaped space curve named after the Italian mathematician Vincenzo Viviani, the intersection of a sphere with a cylinder that is tangent to the sphere and passes through the center of the sphere. </p>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="viviani.gif" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >Sphere-cylinder intersection</span></p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equations-->
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equations </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p> The curve can be obtained by intersecting a sphere of radius $2a$  centered at the origin, </p>
+                    <p>
+                        \begin{align}
+                        \ x^2 + y^2 + z^2 = 4a^2 \\
+                        \end{align}
                     </p>
-                </blockquote>
-                <hr>
-                <p> The curve can be obtained by intersecting a sphere of radius $2a$  centered at the origin, </p>
-                <p>
-                    \begin{align}
-                    \ x^2 + y^2 + z^2 = 4a^2 \\
-                    \end{align}
-                </p>
-                <p>with the cylinder centered at $(a,0,0)$ of radius $a$ given by </p>
-                <p>
-                    \begin{align}
-                    \ (x-a)^2 + y^2 = a^2\\
-                    \end{align}
-                </p>
-                <p>The resulting curve of intersection,$V$, can be parameterized by $t$ to give the parametric equation of Viviani's curve: </p>
-                <p>
-                    \begin{align}
-                    \ V(t) = \Bigg< a \big(1+\cos(t)\big), a\sin(t), 2a\sin(\frac{t}{2})\Bigg>
-                    \end{align}
-                </p>
-                <!-- Equations-->
-                <!-- Maple-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> Maple Sample Code </strong>
+                    <p>with the cylinder centered at $(a,0,0)$ of radius $a$ given by </p>
+                    <p>
+                        \begin{align}
+                        \ (x-a)^2 + y^2 = a^2\\
+                        \end{align}
                     </p>
-                </blockquote>
-                <hr>
-                <p class="text-center">
-                    <img class="text-cente" src="viviani_maple.gif">
-                </p>
-                </br>
+                    <p>The resulting curve of intersection,$V$, can be parameterized by $t$ to give the parametric equation of Viviani's curve: </p>
+                    <p>
+                        \begin{align}
+                        \ V(t) = \Bigg< a \big(1+\cos(t)\big), a\sin(t), 2a\sin(\frac{t}{2})\Bigg>
+                        \end{align}
+                    </p>
+                    <!-- Equations-->
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p class="text-center">
+                        <img class="text-cente" src="viviani_maple.gif">
+                    </p>
+                    </br>
                 <pre class="prettyprint linenums">restart;
 with(plots):
 display([spacecurve([1+cos(t),sin(t),sqrt(4-sin(t)^2-(1+cos(t))^2)],t=0..2*Pi,color=red,thickness=4),spacecurve([1+cos(t),sin(t),-sqrt(4-sin(t)^2-(1+cos(t))^2)],t=0..2*Pi,color=red,thickness=4),sphereplot(2,theta=0..2*Pi,phi=0..Pi,grid=[36,48],color=green,style=wireframe),plot3d([1+cos(t),sin(t),s],t=0..2*Pi,s=-2..2,grid=[36,48],color=cyan,style=wireframe),spacecurve([1+cos(t),sin(t),2.01],t=0..2*Pi,color=blue,thickness=1),spacecurve([1+cos(t),sin(t),-2.03],t=0..2*Pi,color=blue,thickness=1)],scaling=constrained,orientation=[-95,60],title=`Viviani's curve`,titlefont=[TIMES,BOLD,24]); </pre>
-                <p>
-                    <a href="Viviani.mw"> Download Maple Code </a>
-                </p>
-                <!-- Maple-->
-                <!-- To Developers-->
-                <br/>
-                <blockquote>
-                    <p class="lead muted">
-                        <strong> To Developers </strong>
+                    <p>
+                        <a href="Viviani.mw"> Download Maple Code </a>
                     </p>
-                </blockquote>
-                <hr>
-                <pre class="prettyprint linenums"> //Source code is not available</pre>
-                <!-- To Developers-->
-                <!-- Refrences-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> References </strong>
-                    </p>
-                </blockquote>
-                <hr>
-                <ol>
-                    <li> <a href="http://en.wikipedia.org/wiki/Viviani's_curve"> Wikipedia, Viviani's curve </a> </li>
-                    <li> <a href="http://math.la.asu.edu/~kawski/MAPLE/272/c_curves/viviani1.html"> Math.la.asu.edu, Viviani's curve </a> </li>
-                    <li> <a href="http://paulbourke.net/geometry/viviani/"> Paulbourke, Viviani's curve </a> </li>
-                </ol>
-                <!-- Refrences-->
+                    <!-- Maple-->
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Viviani's_curve"> Wikipedia, Viviani's curve </a> </li>
+                        <li> <a href="http://math.la.asu.edu/~kawski/MAPLE/272/c_curves/viviani1.html"> Math.la.asu.edu, Viviani's curve </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/viviani/"> Paulbourke, Viviani's curve </a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
                 </br>
             </div>
         </div>
-    </div>
-    <hr>
 
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     </div>
-</div> <!-- /container -->
-
+</footer>
 
 <!-- Le javascript
 ================================================== -->
