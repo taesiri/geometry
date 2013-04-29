@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Equiangular Spiral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
+</head>
+<body>
+<div id="wrap">
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+            <li class="active">Equiangular Spiral</li>
+        </ul>
+
+        <p class="lead text-left">Equiangular Spiral</p>
+
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
+
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                   <p>
+                       A <strong>logarithmic spiral</strong>, <strong>equiangular spiral</strong> or growth spiral is a special kind of spiral curve which often appears in nature. The logarithmic spiral was first described by Descartes and later extensively investigated by Jacob Bernoulli, who called it Spira mirabilis, "the marvelous spiral".
+                   </p></br>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="logarithmic_spiral.png" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >Logarithmic spiral (pitch 10°)</span></p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equations-->
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equations </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p> In polar coordinates $\bigg( r,\theta \bigg)$ the logarithmic curve can be written as </p>
+                    <p>
+                        \begin{align}
+                        \ r = ae^{b\theta} \\
+                        \end{align}
+                    </p>
+                    <p>or </p>
+                    <p>
+                        \begin{align}
+                        \ \theta =  \frac{1}{b} ln(r/a)\\
+                        \end{align}
+                    </p>
+                    <p> with $e$ being the base of natural logarithms, and  $a$ and $b$ being arbitrary positive real constants.</p>
+                    <p> In parametric form, the curve is</p>
+                    <p>
+                        \begin{align}
+                        \ x(t) = r(t)\cos(t) = ae^{bt}\cos(t)\\
+                        \end{align}
+
+                        \begin{align}
+                        \ y(t) = r(t)\sin(t) = ae^{bt}\sin(t)\\
+                        \end{align}
+                    </p>
+                    <p>with real numbers $a$ and $b$.</p>
+                    <!-- Equations-->
+                    <!-- Arc length-->
+                    </br>
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Arc length </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p>The arc length (as measured from the origin, $t=-\infty$ ), curvature, and tangential angle of the logarithmic spiral are given by</p>
+                    <p>
+                        \begin{align}
+                        \  s(\theta) = \frac{a \sqrt{1+b^2} e^{b\theta}}{b} \\
+                        \end{align}
+
+                        \begin{align}
+                        \  \kappa(\theta) = \frac{e^{-b\theta}}{a \sqrt{1+b^2}}  \\
+                        \end{align}
+
+                        \begin{align}
+                        \  \phi(\theta) = \theta  \\
+                        \end{align}
+
+                    </p>
+                    <p></br>
+                        The Cesàro equation is then given by
+                    </p>
+                    <p>
+                        \begin{align}
+                        \  s\kappa = \frac{1-a\kappa \sqrt{1+b^2}}{b}  \\
+                        \end{align}
+                    </p>
+                    <p>
+                        On the surface of a sphere, the analog is a loxodrome.
+                    </p>
+
+                        <!-- Arc length-->
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p class="text-center">
+                        <img class="text-cente" src="equiangular_spiral_maple.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">with(plots):
+f := proc (a, b) options operator, arrow; polarplot([t, a*exp(b*t), t = 0 .. 2*Pi]) end proc;
+f(1, 1/2) </pre>
+                    <p>
+                        <a href="equiangular_spiral.mw"> Download Maple Code </a>
+                    </p>
+                    <!-- Maple-->
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Logarithmic_spiral"> Wikipedia, Logarithmic spiral </a> </li>
+                        <li> <a href="http://mathworld.wolfram.com/LogarithmicSpiral.html"> Mathworld.Wolfram, Logarithmic Spiral </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/equiangularspiral/"> Paulbourke, Equiangular spiral </a> </li>
+                        <li> <a href="mailto:milad261@gmail.com"> Maple Code Author : Milad Ghanimat</a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>
