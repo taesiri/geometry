@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Boy Surface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
+</head>
+<body>
+<div id="wrap">
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../surfaces.html">Surfaces</a> <span class="divider">/</span></li>
+            <li class="active">Boy Surface</li>
+        </ul>
+
+        <p class="lead text-left">Boy Surface</p>
+
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
+
+
+
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                    <p>
+                        In geometry, <strong> Boy's surface </strong> is an immersion of the real projective plane in 3-dimensional space found by Werner Boy in 1901 (he discovered it on assignment from David Hilbert to prove that the projective plane could not be immersed in 3-space). Unlike the Roman surface and the cross-cap, it has no singularities (i.e., pinch-points), but it does self-intersect.
+                    </p> </br>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="animated-boy.gif" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >An animation of Boy's surface</span> </p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equation-->
+                    </br>
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Parametrization of Boy's surface </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p>Boy's surface can be parametrized in several ways. One parametrization, discovered by Rob Kusner and Robert Bryant, is the following: </br> given a complex number $z$ whose magnitude is less than or equal to one ($\lVert{z}\lVert \leq 1$), let</p>
+                    <p>
+                        \begin{align}
+                        \ g_{1} = - \frac{3}{2}Im \bigg[ \frac{z(1-z^4)}{z^6 + \sqrt{5}z^3 -1 } \bigg]\\
+                        \end{align}
+
+                        \begin{align}
+                        \ g_{2} = - \frac{3}{2}Re \bigg[ \frac{z(1+z^4)}{z^6 + \sqrt{5}z^3 -1 } \bigg]\\
+                        \end{align}
+
+                        \begin{align}
+                        \ g_{3} = Im \bigg[ \frac{1+z^6}{z^6 + \sqrt{5}z^3 -1 } \bigg] - \frac{1}{2}\\
+                        \end{align}
+                    </p>
+                    <p> so that</p>
+                    <p>
+                        \begin{align}
+                        \begin{pmatrix}
+                        x\\
+                        y\\
+                        z\\
+                        \end{pmatrix} = \frac{1}{g_{1}^2 + g_{2}^2 + g_{3}^2} \begin{pmatrix}
+                        g_{1}\\
+                        g_{2}\\
+                        g_{3}\\
+                        \end{pmatrix}
+                        \end{align}
+                    </p>
+                    <p>where $x$, $y$, and $z$ are the desired Cartesian coordinates of a point on the Boy's surface.</p></br>
+                    <p class="text-center">
+                        <img class="text-cente" src="parametrization.png">
+                        <p class="text-center"> <span class="label label-info" >A view of the parametrization described here</span> </p>
+                    </p>
+                    </br>
+                    <!-- Equation-->
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+
+                    <p class="text-center">
+                        <img class="text-cente" src="boy_surface_maple.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">with(plots);
+x:=cos(t)*sin(s);
+y:=sin(t)*sin(s);
+z:=cos(s);
+f:=1/2*((2*x^2-y^2-z^2) + 2*y*z*(y^2-z^2) + z*x*(x^2-z^2)+x*y*(y^2-x^2));
+g:= sqrt(3)/2*((y^2-z^2) + z*x*(z^2-x^2) + x*y*(y^2-x^2));
+h:=(x+y+z)*((x+y+z)^3 + 4*(y-x)*(z-y)*(x-z));
+plot3d( [h/8,f,g], s=0..Pi, t=0..Pi)</pre>
+                    <p>
+                        <a href="boy_surface.mw"> Download Maple Code </a>
+                    </p>
+                    <!-- Maple-->
+
+                    <!-- Sage -->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Sage Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+
+                    <p class="text-center">
+                        <img class="text-cente" src="sage_boy_surface.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">u, v = var('u,v')
+fx = 2/3* (cos(u)* cos(2*v) + sqrt(2)* sin(u)* cos(v))* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
+fy = 2/3* (cos(u)* sin(2*v) - sqrt(2)* sin(u)* sin(v))* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
+fz = sqrt(2)* cos(u)* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
+parametric_plot3d([fx, fy, fz], (u, -2*pi, 2*pi), (v, 0, pi), plot_points = [90,90], frame=False, color="orange")</pre>
+                    <p>
+                        <a href=boysurface.py"> Download Sage Code </a>
+                    </p>
+                    <!-- Sage-->
+
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Boy's_surface"> Wikipedia, Boy's surface </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/boy/"> Paulbourke, Boy Surface </a> </li>
+                        <li> <a href="http://mathworld.wolfram.com/BoySurface.html"> Mathworld.Wolfram, Boy Surface </a> </li>
+                        <li> <a href="http://www.sagemath.org/doc/reference/plot3d/sage/plot/plot3d/parametric_plot3d.html"> Parametric Plots </a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>
