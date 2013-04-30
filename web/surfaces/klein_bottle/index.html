@@ -42,12 +42,13 @@
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
 </head>
-
 <body>
-
-<div class="container">
-
+<div id="wrap">
     <div class="navbar-wrapper">
         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
@@ -93,109 +94,132 @@
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
     </div>
-    <hr>
-    <ul class="breadcrumb">
-        <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
-        <li><a href="../surfaces.html">Surfaces</a> <span class="divider">/</span></li>
-        <li class="active">Klein Bottle</li>
-    </ul>
 
-    <p class="lead text-left">Klein Bottle</p>
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../surfaces.html">Surfaces</a> <span class="divider">/</span></li>
+            <li class="active">Klein Bottle</li>
+        </ul>
 
-    <div class="alert alert-block">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <h4>Warning!</h4>
-        Website is currently under development.
-    </div>
+        <p class="lead text-left">Klein Bottle</p>
 
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
 
-
-    <div class="row">
-        <div class="span10">
-            <div class="span5">
-                <p>
-                    In mathematics, the <strong>Klein bottle </strong> is an example of a non-orientable surface; informally, it is a surface (a two-dimensional manifold) in which notions of left and right cannot be consistently defined. Other related non-orientable objects include the Möbius strip and the real projective plane. Whereas a Möbius strip is a surface with boundary, a Klein bottle has no boundary (for comparison, a sphere is an orientable surface with no boundary).
-                </p><p></p></br>
-                <p></p>
-            </div>
-            <div class="span4">
-                <p class="text-center"> <img src="klein_bottle.png" class="img-rounded"> </p>
-                <p class="text-center"> <span class="label label-info" >A two-dimensional representation of the Klein </br> bottle immersed in three-dimensional space</span> </p>
-                <p></p>
-            </div>
-            <div class="span9">
-                <!-- Equation-->
-                </br>
-                <blockquote>
-                    <p class="lead ">
-                        <strong> Equation</strong>
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                    <p>
+                        In mathematics, the <strong>Klein bottle </strong> is an example of a non-orientable surface; informally, it is a surface (a two-dimensional manifold) in which notions of left and right cannot be consistently defined. Other related non-orientable objects include the Möbius strip and the real projective plane. Whereas a Möbius strip is a surface with boundary, a Klein bottle has no boundary (for comparison, a sphere is an orientable surface with no boundary).
+                    </p><p></p></br>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="klein_bottle.png" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >A two-dimensional representation of the Klein </br> bottle immersed in three-dimensional space</span> </p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equation-->
+                    </br>
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equation</strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p>The equation for the usual immersion is given by the implicit equation</p>
+                    <p>
+                        \begin{align}
+                        \ \bigg( x^2 + y^2 + z^2 + 2y -1 \bigg)\bigg[ \bigg( x^2 + y^2 + z^2 - 2y -1\bigg)^2 - 8z^2 \bigg] + 16xz \bigg( x^2 + y^2 + z^2 - 2y -1\bigg)= 0 \\
+                        \end{align}
                     </p>
-                </blockquote>
-                <hr>
-                <p>The equation for the usual immersion is given by the implicit equation</p>
-                <p>
-                    \begin{align}
-                    \ \bigg( x^2 + y^2 + z^2 + 2y -1 \bigg)\bigg[ \bigg( x^2 + y^2 + z^2 - 2y -1\bigg)^2 - 8z^2 \bigg] + 16xz \bigg( x^2 + y^2 + z^2 - 2y -1\bigg)= 0 \\
-                    \end{align}
-                </p>
-                <!-- Equation-->
-                <!-- Maple-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> Maple Sample Code </strong>
-                    </p>
-                </blockquote>
-                <hr>
+                    <!-- Equation-->
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
 
-                <p class="text-center">
-                    <img class="text-cente" src="klien_maple.png">
-                </p>
-                </br>
+                    <p class="text-center">
+                        <img class="text-cente" src="klien_maple.png">
+                    </p>
+                    </br>
                 <pre class="prettyprint linenums">with(plots);
 plot3d([(4*(1-(1/2)*cos(u)))*sin(v), 6*cos(u)*(1+sin(u))+(4*(1-(1/2)*cos(u)))*(cos(u)*(1-Heaviside(u-Pi))+Heaviside(u-Pi))*cos(v+Pi*Heaviside(u-Pi)), -16*sin(u)-(4*(1-(1/2)*cos(u)))*sin(u)*cos(v)*(1-Heaviside(u-Pi))], u = 0 .. 2*Pi, v = 0 .. 2*Pi, 'scaling' = 'constrained', 'shading' = 'zhue');
 </pre>
-                <p>
-                    <a href="klein_bottle.mw"> Download Maple Code </a>
-                </p>
-                <!-- Maple-->
-                <!-- To Developers-->
-                <br/>
-                <blockquote>
-                    <p class="lead muted">
-                        <strong> To Developers </strong>
+                    <p>
+                        <a href="klein_bottle.mw"> Download Maple Code </a>
                     </p>
-                </blockquote>
-                <hr>
-                <pre class="prettyprint linenums"> //Source code is not available</pre>
-                <!-- To Developers-->
-                <!-- Refrences-->
-                <br/>
-                <blockquote>
-                    <p class="lead">
-                        <strong> References </strong>
-                    </p>
-                </blockquote>
-                <hr>
-                <ol>
-                    <li> <a href="http://en.wikipedia.org/wiki/Klein_bottle"> Wikipedia, Klein bottle </a> </li>
-                    <li> <a href="http://paulbourke.net/geometry/klein/"> Paulbourke, Klein Bottle </a> </li>
-                    <li> <a href="http://mathworld.wolfram.com/KleinBottle.html"> Mathworld.Wolfram, Klein Bottle </a> </li>
-                    <li> <a href="http://www.mapleprimes.com/maplesoftblog/95570-Klein-Bottle-Plot"> Klein Bottle Plot</a> </li>
-                </ol>
-                <!-- Refrences-->
+                    <!-- Maple-->
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Klein_bottle"> Wikipedia, Klein bottle </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/klein/"> Paulbourke, Klein Bottle </a> </li>
+                        <li> <a href="http://mathworld.wolfram.com/KleinBottle.html"> Mathworld.Wolfram, Klein Bottle </a> </li>
+                        <li> <a href="http://www.mapleprimes.com/maplesoftblog/95570-Klein-Bottle-Plot"> Klein Bottle Plot</a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
                 </br>
             </div>
         </div>
-    </div>
-    <hr>
 
-    <div class="footer">
-        <p class="muted text-center">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a></p>
-        <p class="muted text-center">Code licensed under <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     </div>
-</div> <!-- /container -->
-
+</footer>
 
 <!-- Le javascript
 ================================================== -->
