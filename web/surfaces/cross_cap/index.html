@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Boy Surface</title>
+    <title>Cross-cap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Geometry Group Website">
     <meta name="author" content="taesiri">
@@ -101,10 +101,10 @@
         <ul class="breadcrumb">
             <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
             <li><a href="../surfaces.html">Surfaces</a> <span class="divider">/</span></li>
-            <li class="active">Boy Surface</li>
+            <li class="active">Cross-cap</li>
         </ul>
 
-        <p class="lead text-left">Boy Surface</p>
+        <p class="lead text-left">Cross-cap</p>
 
         <div class="alert alert-block">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -112,88 +112,66 @@
             Website is currently under development.
         </div>
 
-
-
         <div class="row">
             <div class="span10">
                 <div class="span5">
                     <p>
-                        In geometry, <strong> Boy's surface </strong> is an immersion of the real projective plane in 3-dimensional space found by Werner Boy in 1901 (he discovered it on assignment from David Hilbert to prove that the projective plane could not be immersed in 3-space). Unlike the Roman surface and the cross-cap, it has no singularities (i.e., pinch-points), but it does self-intersect.
-                    </p> </br>
+                        In mathematics, a <strong>cross-cap</strong> is a two-dimensional surface in 3-space that is one-sided and the continuous image of a Möbius strip that intersects itself in an interval. In the domain, the inverse image of this interval is a longer interval that the mapping into 3-space "folds in half". At the point where the longer interval is folded in half in the image, the nearby configuration is that of the Whitney umbrella.
+                    </p><p></p></br>
+                    <p></p>
                 </div>
                 <div class="span4">
-                    <p class="text-center"> <img src="animated-boy.gif" class="img-rounded"> </p>
-                    <p class="text-center"> <span class="label label-info" >An animation of Boy's surface</span> </p>
+                    <p class="text-center"> <img src="cross_cap.png" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >Cross-Cap Surface</span> </p>
                     <p></p>
                 </div>
                 <div class="span9">
+
                     <!-- Equation-->
                     </br>
                     <blockquote>
                         <p class="lead ">
-                            <strong> Parametrization of Boy's surface </strong>
+                            <strong> Equations </strong>
                         </p>
                     </blockquote>
                     <hr>
-                    <p>Boy's surface can be parametrized in several ways. One parametrization, discovered by Rob Kusner and Robert Bryant, is the following: </br> given a complex number $z$ whose magnitude is less than or equal to one ($\lVert{z}\lVert \leq 1$), let</p>
+                    <p>
+                        The cross-cap can be generated using the general method for nonorientable surfaces using the polynomial function
+                    </p>
                     <p>
                         \begin{align}
-                        \ g_{1} = - \frac{3}{2}Im \bigg[ \frac{z(1-z^4)}{z^6 + \sqrt{5}z^3 -1 } \bigg]\\
+                        \ f(x,y,z) = \bigg( xz,yz, \frac{1}{2} \bigg( z^2 - x^2 \bigg)\bigg)   \\
+                        \end{align}
+                    </p>
+                    <p>
+                        Transforming to spherical coordinates gives
+                    </p>
+                    <p>
+                        \begin{align}
+                        \ x(u,v) = \frac{1}{2} \cos(u)\sin(2v) \\
                         \end{align}
 
                         \begin{align}
-                        \ g_{2} = - \frac{3}{2}Re \bigg[ \frac{z(1+z^4)}{z^6 + \sqrt{5}z^3 -1 } \bigg]\\
+                        \ y(u,v) = \frac{1}{2} \sin(u)\sin(2v) \\
                         \end{align}
 
                         \begin{align}
-                        \ g_{3} = Im \bigg[ \frac{1+z^6}{z^6 + \sqrt{5}z^3 -1 } \bigg] - \frac{1}{2}\\
+                        \ z(u,v) = \frac{1}{2} \bigg( \cos^2(v) - \cos^2(u)\sin^2(v) \bigg)  \\
                         \end{align}
                     </p>
-                    <p> so that</p>
+                    <p>
+                        where $u \in [0,\ 2\pi]$ and $v \in [0,\ \pi/2]$. To make the equations slightly simpler, all three equations are normally multiplied by a factor of 2 to clear the arbitrary scaling constant. Three views of the cross-cap generated using this equation are shown above. Note that the middle one looks suspiciously like Bour's minimal surface.
+                    </p></br></br>
+                    <p>
+                        Another representation is
+                    </p>
                     <p>
                         \begin{align}
-                        \begin{pmatrix}
-                        x\\
-                        y\\
-                        z\\
-                        \end{pmatrix} = \frac{1}{g_{1}^2 + g_{2}^2 + g_{3}^2} \begin{pmatrix}
-                        g_{1}\\
-                        g_{2}\\
-                        g_{3}\\
-                        \end{pmatrix}
+                        \ f(x,y,z) = \bigg( yz,2xy, x^2 - y^2 \bigg)   \\
                         \end{align}
                     </p>
-                    <p>where $x$, $y$, and $z$ are the desired Cartesian coordinates of a point on the Boy's surface.</p></br>
-                    <p class="text-center">
-                        <img class="text-cente" src="parametrization.png">
-                        <p class="text-center"> <span class="label label-info" >A view of the parametrization described here</span> </p>
                     </br>
                     <!-- Equation-->
-                    <!-- Maple-->
-                    <br/>
-                    <blockquote>
-                        <p class="lead">
-                            <strong> Maple Sample Code </strong>
-                        </p>
-                    </blockquote>
-                    <hr>
-
-                    <p class="text-center">
-                        <img class="text-cente" src="boy_surface_maple.png">
-                    </p>
-                    </br>
-                <pre class="prettyprint linenums">with(plots);
-x:=cos(t)*sin(s);
-y:=sin(t)*sin(s);
-z:=cos(s);
-f:=1/2*((2*x^2-y^2-z^2) + 2*y*z*(y^2-z^2) + z*x*(x^2-z^2)+x*y*(y^2-x^2));
-g:= sqrt(3)/2*((y^2-z^2) + z*x*(z^2-x^2) + x*y*(y^2-x^2));
-h:=(x+y+z)*((x+y+z)^3 + 4*(y-x)*(z-y)*(x-z));
-plot3d( [h/8,f,g], s=0..Pi, t=0..Pi)</pre>
-                    <p>
-                        <a href="boy_surface.mw"> Download Maple Code </a>
-                    </p>
-                    <!-- Maple-->
 
                     <!-- Sage -->
                     <br/>
@@ -205,16 +183,16 @@ plot3d( [h/8,f,g], s=0..Pi, t=0..Pi)</pre>
                     <hr>
 
                     <p class="text-center">
-                        <img class="text-cente" src="sage_boy_surface.png">
+                        <img class="text-cente" src="cross_cap_sage.png">
                     </p>
                     </br>
-                <pre class="prettyprint linenums">u, v = var('u,v')
-fx = 2/3* (cos(u)* cos(2*v) + sqrt(2)* sin(u)* cos(v))* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
-fy = 2/3* (cos(u)* sin(2*v) - sqrt(2)* sin(u)* sin(v))* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
-fz = sqrt(2)* cos(u)* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
-parametric_plot3d([fx, fy, fz], (u, -2*pi, 2*pi), (v, 0, pi), plot_points = [90,90], frame=False, color="orange")</pre>
+                <pre class="prettyprint linenums">var('u,v')
+fx = (1+cos(v))*cos(u)
+fy = (1+cos(v))*sin(u)
+fz = -tanh((2/3)*(u-pi))*sin(v)
+parametric_plot3d([fx, fy, fz], (u, 0, 2*pi), (v, 0, 2*pi), frame=False, color="red")</pre>
                     <p>
-                        <a href=boysurface.py"> Download Sage Code </a>
+                        <a href="cross_cap.py"> Download Sage Code </a>
                     </p>
                     <!-- Sage-->
 
@@ -237,14 +215,16 @@ parametric_plot3d([fx, fy, fz], (u, -2*pi, 2*pi), (v, 0, pi), plot_points = [90,
                     </blockquote>
                     <hr>
                     <ol>
-                        <li> <a href="http://en.wikipedia.org/wiki/Boy's_surface"> Wikipedia, Boy's surface </a> </li>
-                        <li> <a href="http://paulbourke.net/geometry/boy/"> Paulbourke, Boy Surface </a> </li>
-                        <li> <a href="http://mathworld.wolfram.com/BoySurface.html"> Mathworld.Wolfram, Boy Surface </a> </li>
-                        <li> <a href="http://www.sagemath.org/doc/reference/plot3d/sage/plot/plot3d/parametric_plot3d.html"> Parametric Plots </a> </li>
+                        <li> <a href="http://en.wikipedia.org/wiki/Cross-cap"> Wikipedia, Cross-cap </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/crosscap/"> Paulbourke, Cross-Cap </a> </li>
+                        <li> <a href="http://mathworld.wolfram.com/Cross-Cap.html"> Mathworld.Wolfram, Cross-Cap </a> </li>
+                        <li> <a href="http://xahlee.info/surface/cross-cap/cross-cap.html"> Xahlee.info, Cross-Cap Surface </a> </li>
+                        <li> <a href="http://www.sagemath.org"> Sage Math </a> </li>
                     </ol>
                     <!-- Refrences-->
                     </br>
                 </div>
+
             </div>
         </div>
 

@@ -1,0 +1,5 @@
+var('u,v')
+fx = (1+cos(v))*cos(u)
+fy = (1+cos(v))*sin(u)
+fz = -tanh((2/3)*(u-pi))*sin(v)
+parametric_plot3d([fx, fy, fz], (u, 0, 2*pi), (v, 0, 2*pi), frame=False, color="red")
