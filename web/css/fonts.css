@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'BLotus';
+    src: url('../fonts/BLotus.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BLotus.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BLotus.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+@font-face {
+    font-family: 'BBadr';
+    src: url('../fonts/BBadr.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BBadr.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BBadr.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+    font-family: 'BBaran';
+    src: url('../fonts/BBaran.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BBaran.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BBaran.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+    font-family: 'BCompset';
+    src: url('../fonts/BCompset.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BCompset.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BCompset.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+    font-family: 'BDavat';
+    src: url('../fonts/BDavat.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BDavat.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BDavat.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
