@@ -154,11 +154,29 @@
                         <img class="text-cente" src="klien_maple.png">
                     </p>
                     </br>
-                <pre class="prettyprint linenums">with(plots);
+                <pre class="prettyprint linenums">with(plots):
 plot3d([(4*(1-(1/2)*cos(u)))*sin(v), 6*cos(u)*(1+sin(u))+(4*(1-(1/2)*cos(u)))*(cos(u)*(1-Heaviside(u-Pi))+Heaviside(u-Pi))*cos(v+Pi*Heaviside(u-Pi)), -16*sin(u)-(4*(1-(1/2)*cos(u)))*sin(u)*cos(v)*(1-Heaviside(u-Pi))], u = 0 .. 2*Pi, v = 0 .. 2*Pi, 'scaling' = 'constrained', 'shading' = 'zhue');
 </pre>
                     <p>
                         <a href="klein_bottle.mw"> Download Maple Code </a>
+                    </p>
+
+                    </br>
+
+                    <p class="text-center">
+                        <img class="text-cente" src="klien_maple2.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">with(plots):
+x := (2*sin(u)*cos(v/2)-sin(2*u)*sin(v/2)+8)*cos(v):
+y := (2*sin(u)*cos(v/2)-sin(2*u)*sin(v/2)+8)*sin(v):
+z := 4*sin(u)*sin(v/2)+sin(2*u)*cos(v/2):
+plot3d([x,y,z], u=0..2*Pi, v=0..2*Pi, grid=[20,40], title=`A Klein bottle`);
+
+# cleanup:
+x := x; y := y; z := z;</pre>
+                    <p>
+                        <a href="klein_bottle2.mw"> Download Maple Code </a>
                     </p>
                     <!-- Maple-->
                     <!-- To Developers-->
@@ -184,6 +202,7 @@ plot3d([(4*(1-(1/2)*cos(u)))*sin(v), 6*cos(u)*(1+sin(u))+(4*(1-(1/2)*cos(u)))*(c
                         <li> <a href="http://paulbourke.net/geometry/klein/"> Paulbourke, Klein Bottle </a> </li>
                         <li> <a href="http://mathworld.wolfram.com/KleinBottle.html"> Mathworld.Wolfram, Klein Bottle </a> </li>
                         <li> <a href="http://www.mapleprimes.com/maplesoftblog/95570-Klein-Bottle-Plot"> Klein Bottle Plot</a> </li>
+                        <li> <a href="http://www.math.umbc.edu/~rouben/dynagraph/examples.html"> University of Maryland Website, Mathematics Department </a> </li>
                     </ol>
                     <!-- Refrences-->
                     </br>
