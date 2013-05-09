@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kuen's Surface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
+</head>
+<body>
+<div id="wrap">
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../surfaces.html">Surfaces</a> <span class="divider">/</span></li>
+            <li class="active">Kuen's Surface</li>
+        </ul>
+
+        <p class="lead text-left">Kuen's Surface</p>
+
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
+
+        <div class="row">
+            <div class="span10">
+                <div class="span5">
+                    <p>
+                        The Kuen surface is a special case of Enneper's negative curvature surfaces.
+                    </p>
+                    <p></p></br>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="kuen1.gif" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >Kuen's surface</span> </p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equation-->
+                    </br>
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equation</strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p>
+                        \begin{align}
+                        \  x = \frac{2\big( \cos(u) + u\sin(u) \big) \sin(v)}{1+u^2\sin^2(v)} \\
+                        \end{align}
+
+                        \begin{align}
+                        \  y  = \frac{2\big( \sin(u) + u\cos(u) \big) \sin(v)}{1+u^2\sin^2(v)} \\
+                        \end{align}
+
+                        \begin{align}
+                        \  z = \ln\big[ \tan( \frac{1}{2} v ) \big] + \frac{2\cos(v)}{1+u^2sin^2(v)} \\
+                        \end{align}
+                    </p>
+                    <p>
+                        for ,  $v \in [0,\pi)$, $u \in [0,2\pi)$.
+                    </p>
+                    </br>
+                    <!-- Equation
+
+                     <!-- Gaussian-->
+                    </br>
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Gaussian and mean Curvatures</strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p>
+                        The Gaussian and mean curvatures are
+                    </p>
+                    <p>
+                        \begin{align}
+                        \  K = -1 \\
+                        \end{align}
+
+                        \begin{align}
+                        \  H = -\frac{\csc(v)}{4u} + \frac{1}{4}u\sin(v)\bigg[ 1 + \frac{8}{2-u^2+u^2\cos(2v)} \bigg] \\
+                        \end{align}
+                    </p> </br>
+                    <p>
+                        and the principal curvatures are
+                    </p>
+
+                    <p>
+                        \begin{align}
+                        \ \kappa_1 = \frac{4u\sin(v)}{2-u^2+u^2\cos(2v)}    \\
+                        \end{align}
+
+                        \begin{align}
+                        \ \kappa_2 =  - \frac{\big[2-u^2+u^2\cos(2v)\big]\csc(v)}{4u}  \\
+                        \end{align}
+                    </p>
+
+
+                    </br>
+                    <!-- Gaussian-->
+
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+
+                    <p class="text-center">
+                        <img class="text-cente" src="kuen_maple.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">w := 1 + u^2*sin(v)^2;
+x := 2*(cos(u)+u*sin(u))*sin(v)/w;
+y := 2*(sin(u)-u*cos(u))*sin(v)/w;
+z := log(tan(v/2)) + 2*cos(v)/w;
+plot3d([x,y,z], u=-4..4, v=0.05..Pi-0.05,title=`Kuen's surface of constant negative curvature`);
+
+# cleanup:
+x := x; y := y; z := z; w := w;</pre>
+                    <p>
+                        <a href="kuen_maple.mw"> Download Maple Code </a>
+                    </p>
+                    <!-- Maple-->
+                    <!-- Sage -->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Sage Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+
+                    <p class="text-center">
+                        <img class="text-cente" src="kuen_sage.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">var('u,v')
+fx = (2*(cos(u) + u*sin(u))*sin(v))/(1+ u^2*sin(v)^2)
+fy = (2*(sin(u) - u*cos(u))*sin(v))/(1+ u^2*sin(v)^2)
+fz = log(tan(1/2 *v)) + (2*cos(v))/(1+ u^2*sin(v)^2)
+parametric_plot3d([fx, fy, fz], (u, 0, 2*pi), (v, 0.01, pi-0.01), plot_points = [100,100], frame=False, color="purple")</pre>
+                    <p>
+                        <a href="kuen_sage.py"> Download Sage Code </a>
+                    </p>
+                    <!-- Sage-->
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://paulbourke.net/geometry/kuen/"> Paulbourke, Kuen surface </a> </li>
+                        <li> <a href="http://mathworld.wolfram.com/KuenSurface.html"> Mathworld.Wolfram, Kuen Surface </a> </li>
+                        <li> <a href="http://www.math.umbc.edu/~rouben/dynagraph/examples.html"> University of Maryland Website, Mathematics Department </a> </li>
+                        <li> <a href="http://www.amazon.com/exec/obidos/ASIN/1584884487/ref=nosim/weisstein-20"> Modern Differential Geometry of Curves and Surfaces with Mathematica, Third Edition </a> </li>
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>

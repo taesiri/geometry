@@ -1,0 +1,5 @@
+var('u,v')
+fx = (2*(cos(u) + u*sin(u))*sin(v))/(1+ u^2*sin(v)^2)
+fy = (2*(sin(u) - u*cos(u))*sin(v))/(1+ u^2*sin(v)^2)
+fz = log(tan(1/2 *v)) + (2*cos(v))/(1+ u^2*sin(v)^2)
+parametric_plot3d([fx, fy, fz], (u, 0, 2*pi), (v, 0.01, pi-0.01), plot_points = [100,100], frame=False, color="purple")
