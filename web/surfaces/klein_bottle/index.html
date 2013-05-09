@@ -117,7 +117,9 @@
                 <div class="span5">
                     <p>
                         In mathematics, the <strong>Klein bottle </strong> is an example of a non-orientable surface; informally, it is a surface (a two-dimensional manifold) in which notions of left and right cannot be consistently defined. Other related non-orientable objects include the Möbius strip and the real projective plane. Whereas a Möbius strip is a surface with boundary, a Klein bottle has no boundary (for comparison, a sphere is an orientable surface with no boundary).
-                    </p><p></p></br>
+                    </p>
+
+                    <p> The Klein bottle was first described in 1882 by the German mathematician Felix Klein. It may have been originally named the Kleinsche Fläche ("Klein surface") and that this was incorrectly interpreted as Kleinsche Flasche ("Klein bottle"), which ultimately led to the adoption of this term in the German language as well.</p></br>
                     <p></p>
                 </div>
                 <div class="span4">
@@ -179,6 +181,27 @@ x := x; y := y; z := z;</pre>
                         <a href="klein_bottle2.mw"> Download Maple Code </a>
                     </p>
                     <!-- Maple-->
+
+                    <!-- Sage -->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Sage Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+
+                    <p class="text-center">
+                        <img class="text-cente" src="klein_bottle_sage.png">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">var('x,y,z')
+implicit_plot3d((x^2+y^2+z^2+2*y-1)*((x^2+y^2+z^2-2*y-1)^2-8*z^2)+16*x*z*(x^2+y^2+z^2-2*y-1), (x, -3, 3), (y, -3.1, 3.1), (z, -4, 4))</pre>
+                    <p>
+                        <a href="klein_bottle_sage.py"> Download Sage Code </a>
+                    </p>
+                    <!-- Sage-->
+
                     <!-- To Developers-->
                     <br/>
                     <blockquote>
@@ -189,7 +212,21 @@ x := x; y := y; z := z;</pre>
                     <hr>
                     <pre class="prettyprint linenums"> //Source code is not available</pre>
                     <!-- To Developers-->
-                    <!-- Refrences-->
+
+                    <!-- Further Reading-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Further Reading </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://plus.maths.org/content/os/issue26/features/mathart/index" target="_blank"> Imaging maths - Inside the Klein bottle </a> </li>
+                    </ol>
+                    <!-- Further Reading-->
+
+                    <!-- References-->
                     <br/>
                     <blockquote>
                         <p class="lead">
@@ -204,7 +241,7 @@ x := x; y := y; z := z;</pre>
                         <li> <a href="http://www.mapleprimes.com/maplesoftblog/95570-Klein-Bottle-Plot"> Klein Bottle Plot</a> </li>
                         <li> <a href="http://www.math.umbc.edu/~rouben/dynagraph/examples.html"> University of Maryland Website, Mathematics Department </a> </li>
                     </ol>
-                    <!-- Refrences-->
+                    <!-- References-->
                     </br>
                 </div>
             </div>
