@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Nephroid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry Group Website">
+    <meta name="author" content="taesiri">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+
+    <!--MathJax.js-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] },
+        displayAlign: "left"
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/javascript" src="../../js/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/jsxgraph.css" />
+
+</head>
+<body>
+<div id="wrap">
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="../../index.html">AUT Geometry Group</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse in collapse" style="height: auto;">
+                        <ul class="nav">
+                            <li ><a href="../../index.html">Home</a></li>
+                            <li ><a href="../../events.html">Events</a></li>
+                            <li ><a href="../../publications.html">Publications</a></li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../questions/">Questions</a></li>
+                                    <li><a href="../../books/">Books</a></li>
+                                    <li><a href="../../video/">Videos</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Geometric Shapes</li>
+                                    <li><a href="../../surfaces/surfaces.html">Surfaces</a></li>
+                                    <li><a href="../../curves/curves.html">Curves</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../people.html">People</a></li>
+                                    <li><a href="../../contact.html">Contact</a></li>
+                                    <li><a href="../../about.html">About</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="../../index.html">Home</a> <span class="divider">/</span></li>
+            <li><a href="../curves.html">Curves</a> <span class="divider">/</span></li>
+            <li class="active">Nephroid</li>
+        </ul>
+
+        <p class="lead text-left">Nephroid</p>
+
+        <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            Website is currently under development.
+        </div>
+
+        <div class="row">
+            <div class="span10">
+
+
+
+                <div class="span5">
+                    <p>The <strong> nephroid </strong> is a plane curve whose name means kidney-shaped (compare nephrology.) Although the term nephroid was used to describe other curves, it was applied to the curve in this article by Proctor in 1878. This and the information below may be verified in Lockwood, pp. 62–71 (see References).</p>
+                    <p></p>
+                </div>
+                <div class="span4">
+                    <p class="text-center"> <img src="epitrochoidOn2.gif" class="img-rounded"> </p>
+                    <p class="text-center"> <span class="label label-info" >The nephroid is the red curve</span> </p>
+                    <p></p>
+                </div>
+                <div class="span9">
+                    <!-- Equations-->
+                    <blockquote>
+                        <p class="lead ">
+                            <strong> Equations </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p> <strong> Parametric equations </strong> </p>
+                    <p> Parametric equations for the nephroid shown above, with cusps on the x-axis, are given by </p></br>
+                    <p>
+                        \begin{align}
+                        \ x = a\big( 3\cos(t) - \cos(3t) \big)\\
+                        \ y = a\big( 3\sin(t) - \sin(3t) \big)\\
+                        \end{align}
+                    </p>
+                    </br>
+                    <p>
+                        When the cusps lie on the y-axis, parametric equations are given by
+                    </p>
+                    <p>
+                        \begin{align}
+                        \ x = a\big( 3\cos(t) + \cos(3t) \big)\\
+                        \ y = a\big( 3\sin(t) + \sin(3t) \big)\\
+                        \end{align}
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <strong> Cartesian equation </strong>
+                    </p>
+                    <p>A Cartesian equation for the nephroid is </p></br>
+                    <p>
+                        \begin{align}
+                        \ (x^2 + y ^2 -4a^2)^3 = 108a^4y^2 \\
+                        \end{align}
+                    </p>
+                    <!-- Equations-->
+
+                    <!-- Maple-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> Maple Sample Code </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <p class="text-center">
+                        <img class="text-cente" src="nephroid_maple.gif">
+                    </p>
+                    </br>
+                <pre class="prettyprint linenums">restart;with(geometry):with(plots):
+
+a:=1;
+
+border:=proc(s);
+         square(sq,[point(sq1,-s/2,s/2),point(sq2,s/2,s/2),
+                    point(sq3,s/2,-s/2),point(sq4,-s/2,-s/2)]);
+         sq(colour=white,printtext=false);
+       end proc:
+
+point(top,0,2*a):point(bottom,0,-2*a):
+circle(basecircle,[top,bottom],centername=Center):
+segment(vertical,top,bottom):
+
+n:=52: #number of pictures to draw
+pics:=NULL:pts:=[0,2*a]:
+for i from 0 to n do
+  theta:=i*2*Pi/n;
+  point(centre,3*a*sin(theta),3*a*cos(theta)):
+  circle(c||i,[centre,a]):
+  point(bb||i,3*a*sin(theta),3*a*cos(theta)-a):
+  segment(ss||i,centre,bb||i):
+  phi:=theta*2:
+  rotation(s||i,ss||i,phi+theta,clockwise,centre):
+  b||i:=DefinedAs(s||i)[2]:
+  pts:=pts,coordinates(b||i):
+  pics:=pics,display(pointplot([pts],style=line), draw([border(5*a),basecircle(colour=blue),b||i,s||i,c||i])):
+end do:
+display([pics],insequence=true,axes=none,scaling=constrained,view=[-4*a..4*a,-4*a..4*a]);</pre>
+                    <p>
+                        <a href="nephroid_maple.mw"> Download Maple Code </a>
+                    </p>
+                    <!-- Maple-->
+
+
+
+                    <!-- To Developers-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead muted">
+                            <strong> To Developers </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <pre class="prettyprint linenums"> //Source code is not available</pre>
+                    <!-- To Developers-->
+                    <!-- Refrences-->
+                    <br/>
+                    <blockquote>
+                        <p class="lead">
+                            <strong> References </strong>
+                        </p>
+                    </blockquote>
+                    <hr>
+                    <ol>
+                        <li> <a href="http://en.wikipedia.org/wiki/Nephroid"> Wikipedia, Nephroid </a> </li>
+                        <li> <a href="http://paulbourke.net/geometry/nephroid/"> Paulbourke, Nephroid </a> </li>
+                        <li> <a href="http://mathworld.wolfram.com/Nephroid.html"> Mathworld.Wolfram, Nephroid </a> </li>
+
+                    </ol>
+                    <!-- Refrences-->
+                    </br>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="push"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="../../img/aut_s_2.png" data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+                <ul class="footer-links">
+                    <li><a href="http://aut.ac.ir">Amirkabir University</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="https://github.com/taesiri/geometry">Github</a></li>
+                    <li class="muted">·</li>
+                    <li><a href="../../changelog/changelog.md">Changelog</a></li>
+                </ul>
+                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> MohammadReza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                </br>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap-transition.js"></script>
+<script src="../../js/bootstrap-alert.js"></script>
+<script src="../../js/bootstrap-modal.js"></script>
+<script src="../../js/bootstrap-dropdown.js"></script>
+<script src="../../js/bootstrap-scrollspy.js"></script>
+<script src="../../js/bootstrap-tab.js"></script>
+<script src="../../js/bootstrap-tooltip.js"></script>
+<script src="../../js/bootstrap-popover.js"></script>
+<script src="../../js/bootstrap-button.js"></script>
+<script src="../../js/bootstrap-collapse.js"></script>
+<script src="../../js/bootstrap-carousel.js"></script>
+<script src="../../js/bootstrap-typeahead.js"></script>
+<script src="../../js/prettify.js"></script>
+
+<script>
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>
+
+</body>
+</html>
