@@ -1,165 +1,483 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 
-    <title>Geometry Group &middot; AUT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Geometry Group Website">
-    <meta name="author" content="taesiri">
+<title>Geometry Group &middot; AUT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Geometry Group Website">
+<meta name="author" content="taesiri">
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
+<style>
 
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+.navbar-wrapper .navbar {
+
+}
+
+    /* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+    /* Downsize the brand/project name a bit */
+.navbar .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+    /* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+    padding: 15px 20px;
+}
+
+    /* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+    margin-top: 10px;
+}
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+.carousel {
+    margin-bottom: 60px;
+}
+
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.carousel .item {
+    height: 500px;
+}
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+    /* Featurettes
+    ------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+    /* Thin out the marketing headings */
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-inner {
+        margin: -20px;
+    }
+
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel .container {
+
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .carousel img {
+        height: 300px;
+    }
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 18px;
+    }
+
+    .marketing .span4 + .span4 {
+        margin-top: 40px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+}
+
+
+    /* Sticky footer styles
+              -------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+    /* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+    /* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 150px;
+}
+#footer {
+    background-color:lightgray;
+}
+
+    /* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.container .credit {
+    margin: 20px 0;
+}
+</style>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="ico/favicon.png">
 </head>
+
 <body>
-<div id="wrap">
-    <div class="navbar-wrapper">
-        <div class="container">
-            <div class="navbar navbar-inverse">
-                <div class="navbar-inner">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="index.html">AUT Geometry Group</a>
-                    <div class="nav-collapse in collapse" style="height: auto;">
-                        <ul class="nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="publications.html">Publications</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="questions/">Questions</a></li>
-                                    <li><a href="books/">Books</a></li>
-                                    <li><a href="video/">Videos</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Geometric Shapes</li>
-                                    <li><a href="surfaces/surfaces.html">Surfaces</a></li>
-                                    <li><a href="curves/curves.html">Curves</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="people.html">People</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div><!-- /.navbar-inner -->
-            </div><!-- /.navbar -->
-        </div> <!-- /.container -->
-    </div>
 
-    <!-- Begin page content -->
+
+
+<!-- NAVBAR
+================================================== -->
+<div class="navbar-wrapper">
+    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
     <div class="container">
-        <hr>
-        <div class="jumbotron">
-            <p class="lead"> Welcome to the Home page of Geometry Group</p> </br>
-            <p class="text-left">
-                <strong>Geometry</strong> (Ancient Greek: γεωμετρία; geo- "earth", -metron "measurement") is a branch of mathematics concerned with questions of shape, size, relative position of figures, and the properties of space. A mathematician who works in the field of geometry is called a geometer. Geometry arose independently in a number of early cultures as a body of practical knowledge concerning lengths, areas, and volumes, with elements of a formal mathematical science emerging in the West as early as Thales (6th Century BC). By the 3rd century BC geometry was put into an axiomatic form by Euclid, whose treatment—Euclidean geometry—set a standard for many centuries to follow. Archimedes developed ingenious techniques for calculating areas and volumes, in many ways anticipating modern integral calculus. The field of astronomy, especially mapping the positions of the stars and planets on the celestial sphere and describing the relationship between movements of celestial bodies, served as an important source of geometric problems during the next one and a half millennia. Both geometry and astronomy were considered in the classical world to be part of the Quadrivium, a subset of the seven liberal arts considered essential for a free citizen to master.
-            </p>
-            </br>
-            <p class="text-right"> <a class="btn btn-link" href="http://en.wikipedia.org/wiki/Geometry" >Wikipedia.org</a></p>
 
-        </div>
-        <div class="row-fluid">
-            <!--Latest News-->
-            <p class="lead ">
-                Course Events
-            </p>
-            <table class="table ">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Event</th>
-                    <th>Date</th>
-                    <th>Note</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="error">
-                    <td>1</td>
-                    <td>Midterm exam</td>
-                    <td>04/22/2013</td>
-                    <td>Differential Geometry, Course Id : 1126044</td>
-                </tr>
-                <tr class="error">
-                    <td>2</td>
-                    <td>Midterm exam</td>
-                    <td>05/5/2013</td>
-                    <td>Algebraic Geometry, Course Id : 1129134</td>
-                </tr>
-                <tr class="success">
-                    <td>3</td>
-                    <td>Final exam</td>
-                    <td>06/2/2013</td>
-                    <td>Differential Geometry, Course Id : 1126044</td>
-                </tr>
-                <tr class="success">
-                    <td>4</td>
-                    <td>Final exam</td>
-                    <td>06/10/2013</td>
-                    <td>Algebraic Geometry, Course Id : 1129134</td>
-                </tr>
-                </tbody>
-            </table>
-            <hr>
-            <!--Latest News-->
-            <!--Latest Geometric Shapes-->
-            <p class="lead ">
-                Latest Geometric Shapes
-            </p>
-            <div class="row-fluid">
-                <div class="span4">
-                    <h3 class="text-center">Cycloid</h3>
-                    <p class="text-center"><img src="curves/cycloid/small.gif" class="img-rounded"><p>
-                    <p> A <strong>cycloid</strong> is the curve traced by a point on the rim of a circular wheel as the wheel rolls along a straight line. It is an example of a roulette, a curve generated by a curve rolling on another curve.</p>
-                    <p class="text-right"><a class="btn btn-inverse" href="curves/cycloid/">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h3 class="text-center" >Viviani's curve</h3>
-                    <p class="text-center"><img src="curves/viviani/small.gif" class="img-rounded"><p>
-                    <p>
-                        In <strong>mathematics</strong>, particularly geometry, Viviani's curve, also known as Viviani's window, is a figure eight shaped space curve named after the Italian mathematician Vincenzo Viviani, the intersection of a sphere with a cylinder that is tangent to the sphere and passes through the center of the sphere. </p>
-                    <p>
-                    <p class="text-right"><a class="btn btn-inverse" href="curves/viviani/">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h3 class="text-center">Cornu Spiral</h3>
-                    <p class="text-center"><img src="curves/euler_spiral/small.gif" class="img-rounded"><p>
-                    <p>
-                        An <strong>Euler spiral</strong> is a curve whose curvature changes linearly with its curve length (the curvature of a circular curve is equal to the reciprocal of the radius). Euler spirals are also commonly referred to as <strong>spiros</strong>, <strong>clothoids</strong> or <strong>Cornu spirals</strong>.
-                    </p>
-                    <p class="text-right"><a class="btn btn-inverse" href="curves/euler_spiral/">View details &raquo;</a></p>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="index.html">AUT Geometry Group</a>
+                <div class="nav-collapse in collapse" style="height: auto;">
+                    <ul class="nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="questions/">Questions</a></li>
+                                <li><a href="books/">Books</a></li>
+                                <li><a href="video/">Videos</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Geometric Shapes</li>
+                                <li><a href="surfaces/surfaces.html">Surfaces</a></li>
+                                <li><a href="curves/curves.html">Curves</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="people.html">People</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+    </div> <!-- /.container -->
+</div><!-- /.navbar-wrapper -->
+
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/examples/slide-01.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Welcome</h1>
+                    <p class="lead">Welcome to Home Page of Geometry Group</p>
+
                 </div>
             </div>
-            <!--Latest Geometric Shapes-->
         </div>
+        <div class="item">
+            <img src="img/examples/slide-02.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Klein Bottle</h1>
+                    <p class="lead">The immersion of the Klein bottle.</p>
+                    <a class="btn btn-inverse" href="surfaces/klein_bottle/">View details &raquo;</a>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
 
-    <div id="push"></div>
-</div>
 
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+    <p class="lead"> Latest Events</p>
+    <hr>
+    </br>
+    <!--Latest News-->
+    <table class="table ">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="error">
+            <td>1</td>
+            <td>Midterm exam</td>
+            <td>04/22/2013</td>
+            <td>Differential Geometry, Course Id : 1126044</td>
+        </tr>
+        <tr class="error">
+            <td>2</td>
+            <td>Midterm exam</td>
+            <td>05/5/2013</td>
+            <td>Algebraic Geometry, Course Id : 1129134</td>
+        </tr>
+        <tr class="success">
+            <td>3</td>
+            <td>Final exam</td>
+            <td>06/2/2013</td>
+            <td>Differential Geometry, Course Id : 1126044</td>
+        </tr>
+        <tr class="success">
+            <td>4</td>
+            <td>Final exam</td>
+            <td>06/10/2013</td>
+            <td>Algebraic Geometry, Course Id : 1129134</td>
+        </tr>
+        </tbody>
+    </table>
+    </br>
+    </br>
+    <!--Latest News-->
+
+    <p class="lead"> Latest Geometric Shapes</p>
+    <hr>
+    </br>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="span4">
+            <img class="img-rounded" src="curves/cycloid/small.gif">
+            <h4>Cycloid</h4>
+            <p class="text-left"> A <strong>cycloid</strong> is the curve traced by a point on the rim of a circular wheel as the wheel rolls along a straight line. It is an example of a roulette, a curve generated by a curve rolling on another curve.</p>
+            <p class="text-right"><a class="btn" href="curves/cycloid/">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <img class="img-rounded" src="surfaces/roman_surface/small.gif">
+            <h4>Roman surface</h4>
+            <p class="text-left">
+                The <strong>Roman surface</strong>  or <strong> Steiner surface </strong> is a self-intersecting mapping of the real projective plane into three-dimensional space, with an unusually high degree of symmetry. This mapping is not an immersion of the projective plane; however the figure resulting from removing six singular points is one.
+            </p>
+            <p class="text-right"><a class="btn" href="surfaces/roman_surface/">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <img class="img-rounded" src="curves/lituus_spiral/small.gif">
+            <h4>Lituus Spiral</h4>
+            <p class="text-left"> In mathematics, a <strong>lituus</strong> is a spiral in which the angle is inversely proportional to the square of the radius (as expressed in polar coordinates).</p>
+            <p class="text-right"><a class="btn" href="curves/lituus_spiral/">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+    </div><!-- /.row -->
+
+
+    <hr class="featurette-divider">
+
+</div><!-- /.container -->
+
+<!-- FOOTER -->
 <footer class="footer">
     <div class="container">
 
@@ -202,6 +520,14 @@
 <script src="js/bootstrap-collapse.js"></script>
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
-
+<script>
+    !function ($) {
+        $(function(){
+            // carousel demo
+            $('#myCarousel').carousel()
+        })
+    }(window.jQuery)
+</script>
+<script src="js/holder/holder.js"></script>
 </body>
 </html>
