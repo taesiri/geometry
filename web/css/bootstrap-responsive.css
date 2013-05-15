@@ -1087,6 +1087,11 @@
     float: none;
     margin-left: 0;
   }
+
+    .navbar .nav-collapse .nav.pull-right > li {
+        float: none;
+    }
+
   .nav-collapse,
   .nav-collapse.collapse {
     height: 0;
