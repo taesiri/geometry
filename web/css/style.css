@@ -91,6 +91,7 @@ body {
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
     margin-top: 10px;
+
 }
 
 
@@ -215,4 +216,11 @@ body {
 }
 .container .credit {
     margin: 20px 0;
+}
+
+
+.customfont{
+    font-family: BDavat;
+    font-size: 22px;
+    font-weight: normal;
 }
