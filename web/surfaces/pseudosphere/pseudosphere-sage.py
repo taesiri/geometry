@@ -1,0 +1,5 @@
+u, v = var('u,v')
+fx = u - tanh(u)
+fy = sech(u)*cos(v)
+fz = sech(u)*sin(v)
+parametric_plot3d([fx, fy, fz], (u, -2*pi,2*pi), (v, -2*pi, 2*pi),frame=False, color="gray")
