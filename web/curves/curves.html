@@ -1,222 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Curves</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Geometry Group Website">
-    <meta name="author" content="taesiri">
+    <head>
+        <meta charset="utf-8">
+        <title>Curves</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Geometry Group Website">
+        <meta name="author" content="taesiri">
 
-    <!-- Le styles -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+        <!-- Le styles -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-    <![endif]-->
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="../js/html5shiv.js"> </script>
+        <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../ico/favicon.png">
-</head>
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="../ico/favicon.png">
+    </head>
 
-<body>
-<div id="wrap">
-    <div class="navbar-wrapper">
-        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-        <div class="container">
-            <div class="navbar navbar-inverse">
-                <div class="navbar-inner">
-                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="../index.html">Geometry Department</a>
-                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-                    <div class="nav-collapse in collapse" style="height: auto;">
-                        <ul class="nav">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="../events.html">Events</a></li>
-                            <li><a href="../publications.html">Publications</a></li>
-                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../questions/">Questions</a></li>
-                                    <li><a href="../books/">Books</a></li>
-                                    <li><a href="../video/">Videos</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Geometric Shapes</li>
-                                    <li><a href="../surfaces/surfaces.html">Surfaces</a></li>
-                                    <li class="active"><a href="../curves/curves.html">Curves</a></li>
+    <body>
+        <div id="wrap">
+            <div class="navbar-wrapper">
+                <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+                <div class="container">
+                    <div class="navbar navbar-inverse">
+                        <div class="navbar-inner">
+                            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="brand" href="../index.html">Geometry Department</a>
+                            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                            <div class="nav-collapse in collapse" style="height: auto;">
+                                <ul class="nav">
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../events.html">Events</a></li>
+                                    <li><a href="../publications.html">Publications</a></li>
+                                    <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../questions/">Questions</a></li>
+                                            <li><a href="../books/">Books</a></li>
+                                            <li><a href="../video/">Videos</a></li>
+                                            <li class="divider"></li>
+                                            <li class="nav-header">Geometric Shapes</li>
+                                            <li><a href="../surfaces/surfaces.html">Surfaces</a></li>
+                                            <li class="active"><a href="../curves/curves.html">Curves</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../people.html">People</a></li>
+                                            <li><a href="../contact.html">Contact</a></li>
+                                            <li><a href="../about.html">About</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../people.html">People</a></li>
-                                    <li><a href="../contact.html">Contact</a></li>
-                                    <li><a href="../about.html">About</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div><!-- /.navbar-inner -->
-            </div><!-- /.navbar -->
-        </div> <!-- /.container -->
-    </div>
-
-    <!-- Begin page content -->
-    <div class="container">
-        <hr>
-
-        <p class="lead text-left">Curves</p>
-
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span3">
-                    <div class="well sidebar-nav">
-                        <ul class="nav nav-list">
-                            <li class="nav-header">Curves</li>
-                            <li><a href="cycloid/">Cycloid</a></li>
-                            <li><a href="viviani/">Viviani's curve</a></li>
-                            <li><a href="euler_spiral/">Cornu Spiral</a></li>
-                            <li><a href="butterfly_curve/">Butterfly curve</a></li>
-                            <li><a href="conic_sections/">Conic sections</a></li>
-                            <li><a href="astroid/">Astroid</a></li>
-                            <li><a href="nephroid/">Nephroid</a></li>
-                            <li class="nav-header">Spirals</li>
-                            <li><a href="fermats_spiral/">Fermat's Spiral</a></li>
-                            <li><a href="lituus_spiral/">Lituus Spiral</a></li>
-                            <li><a href="archimedes_spiral/">Archimedes Spiral</a></li>
-                            <li><a href="equiangular_spiral/">Equiangular Spiral</a></li>
-                        </ul>
-                    </div><!--/.well -->
-                </div><!--/span-->
-                <div class="span8">
-                    <div class="row-fluid">
-                        <div class="span4">
-                            <h4>Cycloid</h4>
-                            <img src="cycloid/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="cycloid/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h4>Viviani's curve</h4>
-                            <img src="viviani/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="viviani/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h4>Cornu Spiral</h4>
-                            <img src="euler_spiral/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="euler_spiral/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                    </div><!--/row-->
-                    <div class="row-fluid">
-                        <div class="span4">
-                            <h4>Butterfly curve</h4>
-                            <img src="butterfly_curve/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="butterfly_curve/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h4>Fermat's Spiral</h4>
-                            <img src="fermats_spiral/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="fermats_spiral/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h4>Conic Sections</h4>
-                            <img src="conic_sections/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="conic_sections/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                    </div><!--/row-->
-                    <div class="row-fluid">
-                        <div class="span4">
-                            <h4>Lituus Spiral</h4>
-                            <img src="lituus_spiral/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="lituus_spiral/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h4>Archimedean Spiral</h4>
-                            <img src="archimedes_spiral/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="archimedes_spiral/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h4>Equiangular Spiral</h4>
-                            <img src="equiangular_spiral/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="equiangular_spiral/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                    </div><!--/row-->
-
-                    <div class="row-fluid">
-                        <div class="span4">
-                            <h4>Astroid</h4>
-                            <img src="astroid/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="astroid/">View details &raquo;</a></p>
-                        </div><!--/span-->
-
-                        <div class="span4">
-                            <h4>Nephroid</h4>
-                            <img src="nephroid/small.gif" class="img-rounded"><p></p>
-                            <p><a class="btn btn-inverse" href="nephroid/">View details &raquo;</a></p>
-                        </div><!--/span-->
-                    </div><!--/row-->
-
-                </div><!--/span-->
-            </div><!--/row-->
-        </div><!--/.fluid-container-->
-
-    </div>
-
-    <div id="push"></div>
-</div>
-
-<footer class="footer">
-    <div class="container">
-
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img class="media-object" src="../img/aut_s_2.png" data-src="holder.js/64x64">
-            </a>
-            <div class="media-body">
-                <ul class="footer-links">
-                    <li><a href="http://aut.ac.ir">Amirkabir University (Tehran Polytechnic)</a></li>
-                    <li class="muted">·</li>
-                    <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
-                    <li class="muted">·</li>
-                    <li><a href="https://github.com/taesiri/geometry" target="_blank">Github</a></li>
-                    <li class="muted">·</li>
-                    <li><a href="../changelog/changelog.md" target="_blank">Changelog</a></li>
-                </ul>
-                <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> Mohammad Reza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-                </br>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </div>
+                        <!-- /.navbar-inner -->
+                    </div>
+                    <!-- /.navbar -->
+                </div>
+                <!-- /.container -->
             </div>
+
+            <!-- Begin page content -->
+            <div class="container">
+                <hr>
+
+                <p class="lead text-left">Curves</p>
+
+                <div class="container-fluid">
+                    <div id="example-list">
+                        <p>
+                            <input class="search" type="text" placeholder="Search…" />
+                            <a class="btn btn-success sort pull-right"  data-sort="feature" href="#" style="margin-bottom: 10px;">Sort</a>
+                        </p>
+                        <ul class="list">
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="cycloid/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="cycloid/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Cycloid</h4>
+                                        A <strong>Cycloid</strong> is the curve traced by a point on the rim of a circular wheel as the wheel rolls along a straight line. It is an example of a roulette, a curve generated by a curve rolling on another curve.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="viviani/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="viviani/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Viviani's curve</h4>
+                                        In <strong>mathematics</strong>, particularly geometry, <strong>Viviani's curve</strong>, also known as Viviani's window, is a figure eight shaped space curve named after the Italian mathematician Vincenzo Viviani, the intersection of a sphere with a cylinder that is tangent to the sphere and passes through the center of the sphere.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="euler_spiral/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="euler_spiral/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Cornu Spiral</h4>
+                                        An <strong>Euler spiral</strong> is a curve whose curvature changes linearly with its curve length (the curvature of a circular curve is equal to the reciprocal of the radius). Euler spirals are also commonly referred to as spiros, clothoids or Cornu spirals.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="butterfly_curve/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="butterfly_curve/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Butterfly curve</h4>
+                                        The <strong>Butterfly curve</strong> is a transcendental plane curve discovered by Temple H. Fey.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="fermats_spiral/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="fermats_spiral/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Fermat's Spiral</h4>
+                                       <strong> Fermat's spiral</strong> (also known as a parabolic spiral) is an Archimedean spiral
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="conic_sections/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="conic_sections/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Conic Sections</h4>
+                                          Conic sections                                  
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="lituus_spiral/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="lituus_spiral/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Lituus Spiral</h4>
+                                        In <strong>mathematics</strong>, a <strong>lituus</strong> is a spiral in which the angle is inversely proportional to the square of the radius (as expressed in polar coordinates).
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="archimedes_spiral/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="archimedes_spiral/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Archimedean Spiral</h4>
+                                        The <strong>Archimedean spiral</strong> (also known as the <strong>arithmetic spiral</strong> or <strong>spiral of Archimedes</strong>) is a spiral named after the 3rd century BC Greek mathematician Archimedes.
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="equiangular_spiral/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="equiangular_spiral/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Equiangular Spiral</h4>
+                                        A <strong>logarithmic spiral</strong>, <strong>equiangular spiral</strong> or<strong> growth spiral</strong> is a special kind of spiral curve which often appears in nature. 
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="astroid/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="astroid/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Astroid</h4>
+                                        An <strong>astroid</strong> (sometimes spelled <strong>asteroid</strong>) is a particular mathematical curve: a hypocycloid with four cusps.
+                                    </div>
+                                </div>
+                            </li>
+                              
+                            <li class="sortableList">
+                                <div class="media feature">
+                                    <a class="pull-left" href="nephroid/">
+                                        <img class="media-object"  alt="64x64" style="height: 64px; width: 64px;" src="nephroid/small.gif">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Nephroid</h4>
+                                        The <strong>nephroid</strong> is a plane curve whose name means kidney-shaped (compare nephrology.) 
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!--/.fluid-container-->
+
+
+
+            </div>
+
+            <div id="push"></div>
         </div>
 
-    </div>
-</footer>
+        <footer class="footer">
+            <div class="container">
 
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap-transition.js"></script>
-<script src="../js/bootstrap-alert.js"></script>
-<script src="../js/bootstrap-modal.js"></script>
-<script src="../js/bootstrap-dropdown.js"></script>
-<script src="../js/bootstrap-scrollspy.js"></script>
-<script src="../js/bootstrap-tab.js"></script>
-<script src="../js/bootstrap-tooltip.js"></script>
-<script src="../js/bootstrap-popover.js"></script>
-<script src="../js/bootstrap-button.js"></script>
-<script src="../js/bootstrap-collapse.js"></script>
-<script src="../js/bootstrap-carousel.js"></script>
-<script src="../js/bootstrap-typeahead.js"></script>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../img/aut_s_2.png" data-src="holder.js/64x64">
+                    </a>
+                    <div class="media-body">
+                        <ul class="footer-links">
+                            <li><a href="http://aut.ac.ir">Amirkabir University (Tehran Polytechnic)</a></li>
+                            <li class="muted">·</li>
+                            <li><a href="http://math-cs.aut.ac.ir">Mathematics Department</a></li>
+                            <li class="muted">·</li>
+                            <li><a href="https://github.com/taesiri/geometry" target="_blank">Github</a></li>
+                            <li class="muted">·</li>
+                            <li><a href="../changelog/changelog.md" target="_blank">Changelog</a></li>
+                        </ul>
+                        <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a>by <a href="http://taesiri.com">Mohammad Reza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                    </br>
+                    </div>
+                </div>
 
-</body>
+            </div>
+        </footer>
+
+        <!-- Le javascript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery.js"> </script>
+        <script src="../js/bootstrap-transition.js"> </script>
+        <script src="../js/bootstrap-alert.js"> </script>
+        <script src="../js/bootstrap-modal.js"> </script>
+        <script src="../js/bootstrap-dropdown.js"> </script>
+        <script src="../js/bootstrap-scrollspy.js"> </script>
+        <script src="../js/bootstrap-tab.js"> </script>
+        <script src="../js/bootstrap-tooltip.js"> </script>
+        <script src="../js/bootstrap-popover.js"> </script>
+        <script src="../js/bootstrap-button.js"> </script>
+        <script src="../js/bootstrap-collapse.js"> </script>
+        <script src="../js/bootstrap-carousel.js"> </script>
+        <script src="../js/bootstrap-typeahead.js"> </script>
+        <script src="../js/list.min.js"> </script>
+        <script>
+            var options = {
+                valueNames: ['feature', 'description']
+            };
+
+            var featureList = new List('example-list', options);
+        </script>
+
+    </body>
 </html>
