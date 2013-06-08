@@ -224,3 +224,12 @@ body {
     font-size: 22px;
     font-weight: normal;
 }
+
+
+/* LISTS */
+.sortableList {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    list-style: none;
+
+}
