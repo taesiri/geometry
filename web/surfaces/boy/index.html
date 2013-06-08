@@ -119,7 +119,7 @@
                 <div class="span5">
                     <p>
                         In geometry, <strong> Boy's surface </strong> is an immersion of the real projective plane in 3-dimensional space found by Werner Boy in 1901 (he discovered it on assignment from David Hilbert to prove that the projective plane could not be immersed in 3-space). Unlike the Roman surface and the cross-cap, it has no singularities (i.e., pinch-points), but it does self-intersect.
-                    </p> </br>
+                    </p><br />
                 </div>
                 <div class="span4">
                     <p class="text-center"> <img src="animated-boy.gif" class="img-rounded"> </p>
@@ -128,14 +128,14 @@
                 </div>
                 <div class="span9">
                     <!-- Equation-->
-                    </br>
+                   <br />
                     <blockquote>
                         <p class="lead ">
                             <strong> Parametrization of Boy's surface </strong>
                         </p>
                     </blockquote>
                     <hr>
-                    <p>Boy's surface can be parametrized in several ways. One parametrization, discovered by Rob Kusner and Robert Bryant, is the following: </br> given a complex number $z$ whose magnitude is less than or equal to one ($\lVert{z}\lVert \leq 1$), let</p>
+                    <p>Boy's surface can be parametrized in several ways. One parametrization, discovered by Rob Kusner and Robert Bryant, is the following:<br /> given a complex number $z$ whose magnitude is less than or equal to one ($\Vert{z}\Vert \leq 1$), let</p>
                     <p>
                         \begin{align}
                         \ g_{1} = - \frac{3}{2}Im \bigg[ \frac{z(1-z^4)}{z^6 + \sqrt{5}z^3 -1 } \bigg]\\
@@ -167,7 +167,7 @@
                     <p class="text-center">
                         <img class="text-cente" src="parametrization.png">
                         <p class="text-center"> <span class="label label-info" >A view of the parametrization described here</span> </p>
-                    </br>
+                   <br />
                     <!-- Equation-->
                     <!-- Maple-->
                     <br/>
@@ -181,7 +181,7 @@
                     <p class="text-center">
                         <img class="text-cente" src="boy_surface_maple.png">
                     </p>
-                    </br>
+                   <br />
                 <pre class="prettyprint linenums">with(plots);
 x:=cos(t)*sin(s);
 y:=sin(t)*sin(s);
@@ -207,7 +207,7 @@ plot3d( [h/8,f,g], s=0..Pi, t=0..Pi)</pre>
                     <p class="text-center">
                         <img class="text-cente" src="sage_boy_surface.png">
                     </p>
-                    </br>
+                   <br />
                 <pre class="prettyprint linenums">u, v = var('u,v')
 fx = 2/3* (cos(u)* cos(2*v) + sqrt(2)* sin(u)* cos(v))* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
 fy = 2/3* (cos(u)* sin(2*v) - sqrt(2)* sin(u)* sin(v))* cos(u) / (sqrt(2) - sin(2*u)* sin(3*v))
@@ -243,7 +243,7 @@ parametric_plot3d([fx, fy, fz], (u, -2*pi, 2*pi), (v, 0, pi), plot_points = [90,
                         <li> <a href="http://www.sagemath.org/doc/reference/plot3d/sage/plot/plot3d/parametric_plot3d.html"> Parametric Plots </a> </li>
                     </ol>
                     <!-- Refrences-->
-                    </br>
+                   <br />
                 </div>
             </div>
         </div>
@@ -272,7 +272,7 @@ parametric_plot3d([fx, fy, fz], (u, -2*pi, 2*pi), (v, 0, pi), plot_points = [90,
                     <li><a href="../../changelog/changelog.md">Changelog</a></li>
                 </ul>
                 <p class="muted text-left" style="font-size: 90%;">Made with<a href="http://twitter.github.io/bootstrap/index.html"> Bootstrap </a> by <a href="http://taesiri.com"> Mohammad Reza Taesiri </a>. Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentations under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-                </br>
+               <br />
             </div>
         </div>
 
